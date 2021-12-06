@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8gbk" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
 <title>ckplayer</title>
@@ -47,21 +47,21 @@ if( flss.indexOf("m3u") > 0) {
 	} else {
   var player = new ckplayer({
         element: document.getElementById('video'),
-        container: '#video', //ÈÝÆ÷µÄID»òclassName
-        variable: 'player', //²¥·Åº¯ÊýÃû³Æ
+        container: '#video', //å®¹å™¨çš„IDæˆ–className
+        variable: 'player', //æ’­æ”¾å‡½æ•°åç§°
         volume:0.99,
-        video: flss,//ÊÓÆµµØÖ·
-        loop: false, //²¥·Å½áÊøÊÇ·ñÑ­»·²¥·Å
-        h5container:'#videoplayer',//h5×Ô¶¨Òå
+        video: flss,//è§†é¢‘åœ°å€
+        loop: false, //æ’­æ”¾ç»“æŸæ˜¯å¦å¾ªçŽ¯æ’­æ”¾
+        h5container:'#videoplayer',//h5è‡ªå®šä¹‰
         autoplay: true,
         flashplayer: isPad ? 'true' : 'flase',
         live: flss.indexOf( 'rtmp:') >0 ? 'true' : 'flase',
         html5m3u8: true,
-        hlsjsConfig: {   //hlsjsºÍCDNByeµÄÅäÖÃ²ÎÊý
+        hlsjsConfig: {   //hlsjså’ŒCDNByeçš„é…ç½®å‚æ•°
             debug: false,
             p2pConfig: {
                 logLevel: false,
-                live: true,//Èç¹ûÊÇµã²¥ÉèÎªfalse
+                live: true,//å¦‚æžœæ˜¯ç‚¹æ’­è®¾ä¸ºfalse
             }
         }
     });
@@ -90,8 +90,8 @@ if( flss.indexOf("m3u") > 0) {
 	} 
     } 
     function updateStats(_peerNum, _totalP2PDownloaded, _totalP2PUploaded) {
-        var text = 'P2P¼ÓËÙ' +  (_totalP2PDownloaded/1024).toFixed(2)
-            + 'MB ÒÑ·ÖÏí' + (_totalP2PUploaded/1024).toFixed(2) + 'MB'  + ' Á¬½Ó½Úµã' + _peerNum + '¸ö';
+        var text = 'P2PåŠ é€Ÿ' +  (_totalP2PDownloaded/1024).toFixed(2)
+            + 'MB å·²åˆ†äº«' + (_totalP2PUploaded/1024).toFixed(2) + 'MB'  + ' è¿žæŽ¥èŠ‚ç‚¹' + _peerNum + 'ä¸ª';
         document.getElementById('stats').innerText = text
     }
     function Stats() {
