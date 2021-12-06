@@ -31,7 +31,7 @@ if(fkss()!==null) flss=fkss();else flss=fnss;
          } else {var flss= flss;}
 document.write("<script type='text/javascript' src='" + jsckx + "'><\/scr" + "ipt>");
 </script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/p2p-ckplayer@latest/ckplayer/ckplayer.min.js" charset="gbk"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/p2p-ckplayer@latest/ckplayer/ckplayer.min.js" charset="utf-8"></script>
 <script src="https://cdn.jsdelivr.net/npm/p2p-dplayer@latest"></script>
 <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 <script src="https://cdn.jsdelivr.net/npm/cdnbye@latest"></script>
@@ -62,7 +62,7 @@ CKobject.embedHTML5('a1','ckplayer_a1','100%',''+height()+'',video,flashvars,sup
 var _peerId = '', _peerNum = 0, _totalP2PDownloaded = 0, _totalP2PUploaded = 0,_totalHTTPDownloaded=0;
 var setIntervaler = 0;
 if( flss.indexOf("m3u") > 0) {
-    var hlsjsConfig= {//hlsjsºÍCDNByeµÄÅäÖÃ²ÎÊý
+    var hlsjsConfig= {//hlsjså’ŒCDNByeçš„é…ç½®å‚æ•°
             debug: false,
             p2pConfig: {
              getStats: Stats(),
@@ -99,8 +99,8 @@ if( flss.indexOf("m3u") > 0) {
 	} 
     } 
     function updateStats(_peerNum, _totalP2PDownloaded, _totalP2PUploaded) {
-        var text = 'P2P¼ÓËÙ' + (_totalP2PDownloaded/1024).toFixed(2)
-            + 'MB ÒÑ·ÖÏí' + (_totalP2PUploaded/1024).toFixed(2) + 'MB' + ' Á¬½Ó½Úµã' + _peerNum + '¸ö';
+        var text = 'P2PåŠ é€Ÿ' + (_totalP2PDownloaded/1024).toFixed(2)
+            + 'MB å·²åˆ†äº«' + (_totalP2PUploaded/1024).toFixed(2) + 'MB' + ' è¿žæŽ¥èŠ‚ç‚¹' + _peerNum + 'ä¸ª';
         document.getElementById('stats').innerText = text
     }
     function Stats() {
