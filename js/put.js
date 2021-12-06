@@ -277,14 +277,14 @@ var huiid =  fkss();
 var videoid = fmss();
 function slist(){ 
 var s=slss();var a=alss();var p=plss();var t=tlss();var u=ulss();var us=ulss();var f=fkss();var w=wlss();
-var slist = '../st/'+lists()+'?&s=' + s + '&a=' + a + '&p=' + p + '&u=' + us + '&t=' + t + '&w=' + w + '&' ;
-//var slist = '../st/'+lists()+'?&s=' + s + '&a=' + a + '&p=' + p + '&u=' + us + '&t=' + t + '&f=' + f + '&w=' + w + '&' ;
+var slist = './st/'+lists()+'?&s=' + s + '&a=' + a + '&p=' + p + '&u=' + us + '&t=' + t + '&w=' + w + '&' ;
+//var slist = './st/'+lists()+'?&s=' + s + '&a=' + a + '&p=' + p + '&u=' + us + '&t=' + t + '&f=' + f + '&w=' + w + '&' ;
 return slist;
 }
 function zlist(){ 
 var s=slss();var a=alss();var p=plss();var t=tlss();var u=ulss();var us=ulss();var f=fkss();var w=wlss();
-var slist = '../st/'+listz()+'?&s=' + s + '&a=' + a + '&p=' + p + '&u=' + us + '&t=' + t + '&w=' + w + '&' ;
-//var slist = '../st/'+listz()+'?&s=' + s + '&a=' + a + '&p=' + p + '&u=' + us + '&t=' + t + '&f=' + f + '&w=' + w + '&' ;
+var slist = './st/'+listz()+'?&s=' + s + '&a=' + a + '&p=' + p + '&u=' + us + '&t=' + t + '&w=' + w + '&' ;
+//var slist = './st/'+listz()+'?&s=' + s + '&a=' + a + '&p=' + p + '&u=' + us + '&t=' + t + '&f=' + f + '&w=' + w + '&' ;
 return slist;
 }
 function usrc(){ 
@@ -292,15 +292,15 @@ var atss=alss()?alss():'ck';
 var us=ulss()?ulss():'0';
 var kfss = fkss();
 var nsrc = '';
-var src0 =  '../t.htm?u='  + us + '&f=' + kfss;
-var src1 =  '../ck.htm?u=' + us + '&f=' + kfss;
-var src3 =  '../k.htm?u=' + us + '&f=' + kfss;
-var src5 =  '../w.htm?u=' + us + '&f=' + kfss;
-var src6 =  '../w/jw.htm?&f=' + kfss;
-var src7 =  '../w/xg.htm?&f=' + kfss;
-var src8 =  '../d.htm?u=' + us + '&f=' + kfss;
-var src9 =  '../u.htm?u=' + us + '&f=' + kfss;
-var srcv0 = '../v.htm?&f='+ kfss;
+var src0 =  './t.htm?u='  + us + '&f=' + kfss;
+var src1 =  './ck.htm?u=' + us + '&f=' + kfss;
+var src3 =  './k.htm?u=' + us + '&f=' + kfss;
+var src5 =  './w.htm?u=' + us + '&f=' + kfss;
+var src6 =  './w/jw.htm?&f=' + kfss;
+var src7 =  './w/xg.htm?&f=' + kfss;
+var src8 =  './d.htm?u=' + us + '&f=' + kfss;
+var src9 =  './u.htm?u=' + us + '&f=' + kfss;
+var srcv0 = './v.htm?&f='+ kfss;
 if( atss =='v') nsrc=srcv0;else if( atss =='u') nsrc=src9;else if( atss =='ck') nsrc=src1;else if( atss =='k') nsrc=src3;
 else if( atss =='w') nsrc=src5;else if( atss =='x'||atss =='xg') nsrc=src7;else if( atss =='d') nsrc=src8;
 else if( atss =='jw') nsrc=src6;else if( atss =='t') nsrc=src0;else nsrc=src1;
@@ -946,7 +946,7 @@ return udss;
 }
 function jscd() {
 //var us=ulss()?ulss():'0';
-     if(us=="0" ) return "../d.htm?u=&f=";
+     if(us=="0" ) return "./d.htm?u=&f=";
 else if(us=="1" ) return "https://shayujx.com/?url=";
 else if(us=="2" ) return "https://lbjx9.com/?&url=";
 else if(us=="3" ) return "https://jx.444662.cn/m3u8/?url=";
@@ -978,7 +978,7 @@ else if(us=="11") wck = "https://1717.ntryjd.net/1717yun/player/ckplayer/";
 else if(us=="12") wck = "https://aaa.000180.top/180/ckplayer/";
 else if(us=="13") wck = "http://hq.ioioz.com/static/js/ckplayer/";
 else if(us=="14") wck = "https://www.administratorm.com/WMXZ/ckplayer/";
-else wck = "../ck/";
+else wck = "./ck/";
 return wck;
 }
 function jskk() {
@@ -986,7 +986,7 @@ var us=ulss()?ulss():'0';
 var wnk = "ckplayer.js";
 var wmk = "ckplayer.min.js";
 var wkk = "";
-     if(us=="0" ) wkk = "../k/";
+     if(us=="0" ) wkk = "./k/";
 else if(us=="1" ) wkk = "https://cdn.jsdelivr.net/npm/p2p-ckplayer@latest/ckplayer/";
 else if(us=="2" ) wkk = "http://player.ioioz.com/ckplayerx/";
 else if(us=="3" ) wkk = "https://www.yaosou.cc/jiexi/player/ckplayerx/";
@@ -1006,7 +1006,7 @@ else if(us=="16") wkk = "https://www.ikulive.com/ckplayer/";
 else if(us=="17") wkk = "https://www.umming.com/demo/ckplayer/js/";
 else if(us=="18") wck = "http://xzglwx.gandongyun.com/xz_video/js/h5videoplayer/js/ckplayer/";
 else if(us=="19") wkk = "https://lirongyao.com/player/ckx/";
-else wkk = "../ckplayerx/";
+else wkk = "./ckplayerx/";
 if(us=='1'||us=='17'||us=='18') return wkk + wmk;else return wkk + wnk;
 }
 /*
