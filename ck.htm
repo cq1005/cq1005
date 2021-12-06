@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<link href="./css/common.css" rel="stylesheet" type="text/css">
+<title></title>
+<style type="text/css">
+    body,html,.a1{background-color:#000;padding: 0;margin: 0;width:100%;height:100%;frameborder:0;border:0;}
+    #stats{position:fixed;top:5px;left:10px;font-size:12px;color:#fdfdfd;z-index:2147483647;text-shadow:1px 1px 1px #000, 1px 1px 1px #000}
+</style>
+<script type="text/javascript" src="./js/put.js"></script>
+<script type="text/javascript">
+if(ulss()!==null) var us=ulss();else var us=uk;
+var jsckx=jsck()+'ckplayer.js';
+var jsw=jsck()+'ckplayer.swf';
+var jsm=jsck()+'m3u8.swf';
+</script>
+</head>
+<body style="margin:0;padding:0;width:100%; height:100%;position:absolute;z-index:-1" ondragstart="window.event.returnValue=false">
+<script type="text/javascript">
+if(fkss()!==null) flss=fkss();else flss=fnss;
+        if( fkss().length >16 && fkss().length <26 && fkss().indexOf("http") < 1){
+            var flss="https://api.leduotv.com/wp-api/glid.php?vid=" + fkss();//XMMTY2ODczMDAwMF8xNzE=
+            //var flss="https://api.xxctzy.com/wp-api/glid.php?vid=" + fkss();
+         } else if( fkss().indexOf("live.nbs.cn")>0){
+            var flss= "./jw.htm?f=" + fkss();
+         } else if( fkss().indexOf("hljtv.com")>0){
+            var flss= "./d.htm?f=" + fkss();
+         } else {var flss= flss;}
+document.write("<script type='text/javascript' src='" + jsckx + "'><\/scr" + "ipt>");
+</script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/p2p-ckplayer@latest/ckplayer/ckplayer.min.js" charset="gbk"></script>
+<script src="https://cdn.jsdelivr.net/npm/p2p-dplayer@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/cdnbye@latest"></script>
+<div id="a1" class="a1" width="100%" height="100%"></div>
+<div id="stats" class="stats"></div>
+<table bgcolor="#000000"">
+<tr><td>
+<script type="text/javascript">
+     if(flss.indexOf("leduotv.com") > 0||flss.indexOf("xxctzy.com") > 0||flss.indexOf("live.nbs.cn")>0||flss.indexOf("hljtv.com")>0){
+      var htm = '<iframe src="' + flss + '" width="100%" height="100%" autoplay="true" allowfullscreen="true" scrolling="no" allowtransparency="true" style="background:url #000 center center no-repeat;overflow:hidden;background-size: 50px 50px;" frameborder="0"></iframe>';
+        document.getElementById('a1').innerHTML = htm;
+	} else {
+if( flss.indexOf("m3u") > 0) {
+var flashvars={f:jsm,a:flss,s:4,c:0,v:98,e:0,h:4,lv:0,p:1};
+} else if( flss.indexOf("mp4") > 0) {
+var flashvars= {f:flss,s:0,c:0,v:98,p:1,h:3};
+} else if( flss.indexOf("xml") > 0) {
+var flashvars= {f:flss,s:2,c:0,v:98,p:1,h:3};
+} else {
+var flashvars= {f:flss,s:0,c:0,v:98,b:0,p:1};/*{encodeURIComponent(flss)}*/
+};
+var video=[flss+'->video/m3u8',flss+'->video/flv',flss+'->video/mp4',flss+'->video/webm',flss+'->video/ogg'];
+var params = { bgcolor:'#000',allowFullScreen:true,allowScriptAccess:'always',wmode:'transparent',allowFullScreenInteractive:'true'};
+var attributes = { id:'ckplayer_a1',name:'ckplayer_a1',menu:'false'};
+var support=['iPad','iPhone','ios','android+false','msie10+false'];
+CKobject.embed(jsw,'a1','ckplayer_a1','100%',''+height()+'',false,flashvars,video,params,attributes);
+CKobject.embedHTML5('a1','ckplayer_a1','100%',''+height()+'',video,flashvars,support);
+var _peerId = '', _peerNum = 0, _totalP2PDownloaded = 0, _totalP2PUploaded = 0,_totalHTTPDownloaded=0;
+var setIntervaler = 0;
+if( flss.indexOf("m3u") > 0) {
+    var hlsjsConfig= {//hlsjs和CDNBye的配置参数
+            debug: false,
+            p2pConfig: {
+             getStats: Stats(),
+            },
+     };
+     }
+     }
+    a1.on('stats', function (stats) {
+        _totalP2PDownloaded = stats.totalP2PDownloaded;
+        _totalP2PUploaded = stats.totalP2PUploaded;
+    })
+    a1.on('ended', function (){
+	if(next){
+		top.location.href = next;
+	}
+    })
+    a1.on('peerId', function (peerId) {
+        _peerId = peerId;
+    })
+    a1.on('peers', function (peers) {
+        _peerNum = peers.length;
+    });
+    function randomNum(minNum,maxNum){ 
+	 switch(arguments.length){ 
+		case 1: 
+		       return parseInt(Math.random()*minNum+1,10); 
+		break; 
+		case 2: 
+		       return parseInt(Math.random()*(maxNum-minNum+1)+minNum,10); 
+		 break; 
+		       default: 
+		       return 0;  
+		 break; 
+	} 
+    } 
+    function updateStats(_peerNum, _totalP2PDownloaded, _totalP2PUploaded) {
+        var text = 'P2P加速' + (_totalP2PDownloaded/1024).toFixed(2)
+            + 'MB 已分享' + (_totalP2PUploaded/1024).toFixed(2) + 'MB' + ' 连接节点' + _peerNum + '个';
+        document.getElementById('stats').innerText = text
+    }
+    function Stats() {
+	clearInterval(setIntervaler); 
+	setIntervaler = setInterval(() => {updateStats(randomNum(0,20), randomNum(1000,10000), randomNum(10000,100000))}, 1000);
+    }
+</script>
+</td></tr>
+</table>
+</div>
+</body>
+</html>

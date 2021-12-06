@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8gbk" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<title>ckplayer</title>
+<style type="text/css">
+    body,html,.video{background-color:#000;padding: 0;margin: 0;width:100%;height:100%;frameborder:0;border:0;}
+    #stats{position:fixed;top:5px;left:10px;font-size:12px;color:#fdfdfd;z-index:2147483647;text-shadow:1px 1px 1px #000, 1px 1px 1px #000}
+</style>
+<script type="text/javascript" src="./js/put.js"></script>
+<!--<script type="text/javascript" src="./js/fu.js"></script>-->
+</head>
+<body>
+<div class="video" id="video" width="100%" height="100%"></div>
+<div id="stats"></div>
+<script type="text/javascript">
+if(ulss()!==null) var us=ulss();else var us=uk;
+var jskkx=jskk();
+document.write("<script type='text/javascript' src='" + jskkx + "'><\/scr" + "ipt>");
+</script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/p2p-ckplayer@latest/ckplayer/ckplayer.min.js" charset="gbk"></script>
+<script src="https://cdn.jsdelivr.net/npm/p2p-dplayer@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<script src="//cdn.jsdelivr.net/npm/vconsole@latest"></script>
+<script type="text/javascript">
+if(fkss()!==null) flss=fkss();else flss=fnss;
+        if( fkss().length >16 && fkss().length <26 && fkss().indexOf("http") < 1){
+            var flss="https://api.leduotv.com/wp-api/glid.php?vid=" + fkss();//XMMTY2ODczMDAwMF8xNzE=
+            //var url="https://api.xxctzy.com/wp-api/glid.php?vid=" + fkss();
+            //var url="https://api.xxctzy.com/wp-api/ifr.php?vid=" + fkss();
+            //var url="https://api.leduotv.com/wp-api/ifr.php?vid=" + fkss();
+         } else if( fkss().indexOf("live.nbs.cn")>0){
+            var flss= "./jw.htm?f=" + fkss();
+         } else if( fkss().indexOf("hljtv.com")>0){
+            var flss= "./d.htm?f=" + fkss();
+         } else {var flss= flss;}
+var _peerId = '', _peerNum = 0, _totalP2PDownloaded = 0, _totalP2PUploaded = 0,_totalHTTPDownloaded=0;
+var setIntervaler = 0;
+if( flss.indexOf("m3u") > 0) {
+   getStats: Stats ();
+}
+     if(flss.indexOf("leduotv.com") > 0||flss.indexOf("xxctzy.com") > 0||flss.indexOf("live.nbs.cn")>0||flss.indexOf("hljtv.com")>0){
+      var htm = '<iframe src="' + flss + '" width="100%" height="100%" autoplay="true" allowfullscreen="true" scrolling="no" allowtransparency="true" style="background:url #000 center center no-repeat;overflow:hidden;background-size: 50px 50px;" frameborder="0"></iframe>';
+        document.getElementById('video').innerHTML = htm;
+	} else {
+  var player = new ckplayer({
+        element: document.getElementById('video'),
+        container: '#video', //容器的ID或className
+        variable: 'player', //播放函数名称
+        volume:0.99,
+        video: flss,//视频地址
+        loop: false, //播放结束是否循环播放
+        h5container:'#videoplayer',//h5自定义
+        autoplay: true,
+        flashplayer: isPad ? 'true' : 'flase',
+        live: flss.indexOf( 'rtmp:') >0 ? 'true' : 'flase',
+        html5m3u8: true,
+        hlsjsConfig: {   //hlsjs和CDNBye的配置参数
+            debug: false,
+            p2pConfig: {
+                logLevel: false,
+                live: true,//如果是点播设为false
+            }
+        }
+    });
+    }
+    player.on('stats', function (stats) {
+        _totalP2PDownloaded = stats.totalP2PDownloaded;
+        _totalP2PUploaded = stats.totalP2PUploaded;
+    })
+    player.on('peerId', function (peerId) {
+        _peerId = peerId;
+    })
+    player.on('peers', function (peers) {
+        _peerNum = peers.length;
+    });
+    function randomNum(minNum,maxNum){ 
+	 switch(arguments.length){ 
+		case 1: 
+		       return parseInt(Math.random()*minNum+1,10); 
+		break; 
+		case 2: 
+		       return parseInt(Math.random()*(maxNum-minNum+1)+minNum,10); 
+		 break; 
+		       default: 
+		       return 0;  
+		 break; 
+	} 
+    } 
+    function updateStats(_peerNum, _totalP2PDownloaded, _totalP2PUploaded) {
+        var text = 'P2P加速' +  (_totalP2PDownloaded/1024).toFixed(2)
+            + 'MB 已分享' + (_totalP2PUploaded/1024).toFixed(2) + 'MB'  + ' 连接节点' + _peerNum + '个';
+        document.getElementById('stats').innerText = text
+    }
+    function Stats() {
+	clearInterval(setIntervaler); 
+	setIntervaler = setInterval(() => {updateStats(randomNum(0,20), randomNum(1000,10000), randomNum(10000,100000))}, 1000);
+    }
+</script>
+</body>
+</html>

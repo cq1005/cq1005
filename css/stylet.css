@@ -1,0 +1,387 @@
+﻿    body,
+    html,
+    #a1 {
+      background-color: #000;
+      padding: 0;
+      margin: 0;
+      color: transparent;
+      height: 100%;
+      width: 100%;
+    }
+    
+    .player {
+      position: relative;
+      width: 100%;
+      background-color: #000
+    }
+    
+    .vod {
+      width: 100%;
+      background-color: #000
+    }
+    
+    .video {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 40px
+    }
+    
+    .cmd {
+      margin: 0 auto;
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      position: absolute;
+      bottom: 0;
+      background-color: #111;
+      box-sizing: border-box
+    }
+    
+    .left {
+      float: left
+    }
+    
+    .right {
+      float: right;
+      margin-top: -30px
+    }
+    
+    .centent {
+      margin-left: 50px;
+      margin-right: 60px
+    }
+    
+    .tvp_button {
+      background: 0 0;
+      cursor: pointer;
+      width: 46px;
+      height: 40px
+    }
+    
+    .tvp_button button {
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      border: 0 none;
+      background: 0 0;
+      text-align: center;
+      font-size: 0;
+      cursor: pointer
+    }
+    
+    .tvp_play .tvp_btn_value {
+      display: inline-block;
+      width: 0;
+      height: 0;
+      margin-left: 16px;
+      vertical-align: middle;
+      background: 0 0;
+      border: 15px solid transparent;
+      border-width: 10px 15px;
+      border-left-color: #fff;
+      font-size: 0;
+      color: transparent
+    }
+    
+    .tvp_pause .tvp_btn_value {
+      display: inline-block;
+      vertical-align: middle;
+      background: 0 0;
+      font-size: 0;
+      color: transparent;
+      width: 10px;
+      height: 15px;
+      border: 0 none;
+      margin-left: 0;
+      border-left: 2px solid #fff;
+      border-right: 2px solid #fff
+    }
+    
+    .tvp_fullscreen_button {
+      width: 50px;
+      height: 100%
+    }
+    
+    .tvp_fullscreen_button button {
+      position: relative;
+      display: block;
+      top: 5px;
+      width: 100%;
+      height: 30px;
+      background: url(mobile1.png) no-repeat center;
+      cursor: pointer
+    }
+    
+    .tvp_time_total {
+      position: relative;
+      display: block;
+      top: 5px;
+      left: 8px;
+      width: 100%;
+      height: 30px;
+      background: #191919;
+      cursor: pointer
+    }
+    
+    .tvp_time_loaded {
+      position: relative;
+      display: block;
+      width: 10%;
+      height: 30px;
+      cursor: pointer;
+      z-index: 1;
+      background: #222;
+    }
+    
+    .tvp_time_panel {
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      margin-left: -38.5px;
+      z-index: 2;
+      font-size: 13px;
+    }
+    
+    .play {
+      position: absolute;
+      top: 50%;
+      width: 80px;
+      height: 80px;
+      left: 50%;
+      margin-top: -60px;
+      margin-left: -40px;
+      z-index: 5;
+      background: url(mobile2.png) no-repeat;
+      opacity: 0.8;
+    }
+    
+    .panel {
+      Z-INDEX: 7000;
+      POSITION: fixed;
+      PADDING-BOTTOM: 10px;
+      WIDTH: 48px;
+      FONT: 12px/140% Arial, Helvetica, sans-serif;
+      BACKGROUND: #e7e7e7;
+      COLOR: #999;
+      TOP: 0px;
+      RIGHT: 0px;
+      PADDING-TOP: 20px;
+      height: 100%;padding-top:43px;display:none;
+    }
+ 
+    .panel A {
+      COLOR: #999;FONT-SIZE: 12px;display:block;height:32px;line-height: 32px;
+      TEXT-DECORATION: none;text-align: center;
+    }
+    
+    .panel A:hover {
+      BACKGROUND: #666666;
+      COLOR: #fff
+    }
+    .panel A.active {
+      BACKGROUND: #6ed56c;
+      COLOR: #fff
+    }
+    .slide {
+      margin: 0;
+      padding: 0;
+      border-top: solid 0px #000000;
+    }
+    
+    .playmain {
+      margin: 0;
+      padding: 0;
+      border-top: solid 0px #000000;
+    }
+    
+    .WANG-playmain {
+      display: block;
+      position: relative;
+      right: 0px;
+      width: 360px;
+      height: 0px;
+      padding-top: 0px;
+      font-size: 16px;
+      color: red;
+      font-weight: bold;
+      background: #30a56a;
+      text-decoration: none;
+      text-align: center;
+      -moz-border-top-left-radius: 5px;
+      -moz-border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      -moz-border-bottom-left-radius: 5px;
+      -moz-border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    } 
+ .WMXZ-WANG{display: block;position: relative;right: 0px;width: 360px;height: 0px;padding-top: 0px;font-size: 16px;color: red;font-weight: bold;background: #30a56a;text-decoration: none;text-align: center;-moz-border-top-left-radius: 5px;-moz-border-top-right-radius: 5px;border-top-left-radius: 5px;border-top-right-radius: 5px;-moz-border-bottom-left-radius: 5px;-moz-border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;}
+    #play_header {
+      Z-INDEX: 8000;
+      POSITION: fixed;
+      TEXT-INDENT: -99999px;
+      WIDTH: 26px;
+      DISPLAY: block;
+      BACKGROUND: url(/haunxian.gif) no-repeat 0px 0px;
+      HEIGHT: 35px;
+      TOP: 0px;
+      CURSOR: pointer;
+      RIGHT: 0px;
+    }
+    #play_header.open{background-position:0px -43px};
+    #play_header a {
+      color: red;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    #playat {
+      Z-INDEX: 8000;
+      POSITION: fixed;
+      TEXT-INDENT: -99999px;
+      WIDTH: 26px;
+      DISPLAY: block;
+      BACKGROUND: url(/haunxian.gif) no-repeat 0px 0px;
+      HEIGHT: 35px;
+      TOP: 0px;
+      CURSOR: pointer;
+      RIGHT: 0px;
+    }
+    #playat.open{background-position:0px -43px};
+    #play_header a {
+      color: red;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    #header1 {
+      float: left;
+      display: inline;
+      width: 10%;
+      text-align: center
+    }
+    
+    #header3 {
+      float: right;
+      display: inline;
+      text-align: center;
+      border-left: 1px solid #222
+    }
+    
+    #header1 a {
+      float: left;
+      cursor: pointer;
+    }
+    
+    #play_box {
+      overflow: hidden
+    }
+    
+    #video_menu {
+      float: left;
+      width: 0;
+      height: 407px;
+      background: #000;
+      overflow-x: hidden;
+      overflow-y: auto;
+      SCROLLBAR-BASE-COLOR: #1F1F1F;
+      SCROLLBAR-TRACK-COLOR: #000;
+      SCROLLBAR-3DLIGHT-COLOR: #000;
+      SCROLLBAR-SHADOW-COLOR: #000;
+      SCROLLBAR-FACE-COLOR: #1F1F1F;
+      SCROLLBAR-HIGHLIGHT-COLOR: #000;
+      font-family: Microsoft YaHei, '宋体', arial
+    }
+    
+    #video_menu dd,
+    #video_menu dl,
+    #video_menu li,
+    #video_menu li p,
+    #video_menu ul {
+      margin: 0;
+      padding: 0
+    }
+    
+    #video_menu li {
+      border-bottom: 1px solid #302E25;
+      overflow: hidden
+    }
+    
+    #video_menu li p {
+      clear: both;
+      color: #fff;
+      height: 35px;
+      line-height: 35px;
+      padding-left: 15px;
+      font-size: 16px;
+      cursor: pointer
+    }
+    
+    #video_menu li p.current1 {
+      color: #E12060
+    }
+    
+    #video_menu dl {
+      width: 110%;
+      display: none
+    }
+    
+    #video_menu dd {
+      float: left;
+      width: 45%;
+      height: 25px;
+      line-height: 25px;
+      text-align: center;
+      background: #101010;
+      border-bottom: 1px solid #302E25;
+      border-right: 1px solid #302E25;
+      font-size: 12px;
+      color: #eee;
+      overflow: hidden
+    }
+    
+    #video_menu dd a {
+      display: block;
+      color: #302E25;
+      text-decoration: none
+    }
+    
+    #video_menu dd a:hover {
+      color: #E12060;
+      text-decoration: underline
+    }
+    
+    #video_menu dd a.current2 {
+      background: #E12060;
+      color: #fff
+    }
+    
+    #video_menu dd a.current2:hover {
+      color: #fff !important
+    }
+    
+    #player {
+      width: 100%;
+      float: left
+    }
+    
+    #video_menu::-webkit-scrollbar {
+      width: 11px
+    }
+    
+    #video_menu::-webkit-scrollbar-track {
+      background-color: #000;
+      -webkit-border-radius: 2em;
+      -moz-border-radius: 2em;
+      border-radius: 2em;
+      border: 1px solid #111
+    }
+    
+    #video_menu::-webkit-scrollbar-thumb {
+      cursor: pointer;
+      background-color: #444;
+      -webkit-border-radius: 2em;
+      -moz-border-radius: 2em;
+      border-radius: 2em
+    }
