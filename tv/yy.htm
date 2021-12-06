@@ -1,0 +1,30 @@
+﻿<!DOCTYPE HTML PUBLIC>
+<html><head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta http-equiv="x-ua-compatible" content="IE=edge" >
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="https://static.hdslb.com/live-static/libs/jquery/jquery-1.11.3.min.js"></script>
+<body style="margin:0;padding:0;position:absolute; width:100%; height:100%; z-index:-1" bgcolor="#454545" topmargin="0" leftmargin="0" scroll="auto"  oncontextmenu="window.event.returnValue=false">	
+<script>
+function getId( f ) {  var re = new RegExp( f + "=([^\&]*)");  re.exec(document.location.href);   return RegExp.$1;    }
+function height(){  var height=document.documentElement.clientHeight; return height; }
+        var height = height();
+        var flss = getId('f')?getId('f'):"22792717";
+        var cid = getId('cid')?getId('cid'):"22792717";
+        var swfn = 'http://weblbs.yystatic.com/s/' + flss + '/' + cid + '/yycomscene.swf&autoplay=1';
+</script>
+<div id="player"></div>
+<script type="text/javascript">
+var id = 'player';
+document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" src="'+swfn+'" data="'+swfn+'" name="'+id+'" id="'+id+'" width="100%" height="'+height+'" type="application/x-shockwave-flash" ><param name="movie" value="" /><param name="quality" value="high"/><param name="allowscriptaccess" value="always"/><param name="allowfullscreen" value="true"/><param name="wmode" value="Opaque"/><param name="bgcolor" value="#000000"/><param name="flashvars" value="autoplay=true&auto=true"/><embed  src="'+swfn+'" data="'+swfn+'" name="'+id+'" id="'+id+'" flashvars="autoplay=true&auto=true" height="'+height+'" width="100%" SCROLLING="auto" frameborder="0" scroll="auto" type="application/x-shockwave-flash" quality="high" wmode="Opaque" allowfullscreen="true" disablePageFullscreen="true" allowscriptaccess="always"></embed></object>');
+/*}else {
+document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" src="'+swfn+'" data="'+swfn+'" name="'+id+'" id="'+id+'" width="100%" height="'+height+'" type="application/x-shockwave-flash" ><param name="movie" value="" /><param name="quality" value="high"/><param name="allowscriptaccess" value="always"/><param name="allowfullscreen" value="true"/><param name="wmode" value="Opaque"/><param name="bgcolor" value="#000000"/><param name="flashvars" value="autoplay=true&auto=true"/><iframe  src="'+swfn+'" data="'+swfn+'" name="'+id+'" id="'+id+'" flashvars="autoplay=true&auto=true" height="'+height+'" width="100%" SCROLLING="auto" frameborder="0" scroll="auto" type="application/x-shockwave-flash" quality="high" wmode="Opaque" allowfullscreen="true" disablePageFullscreen="true" allowscriptaccess="always"></iframe></object>');
+}*/
+</script>
+<script>
+  document.getElementById("player").contentWindow.document.body.contentEditable= "true";  
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE HTML PUBLIC>
+<html><head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<body style="margin:0px;">
+<div id="player">
+<script>
+        var flss = getId('f')?getId('f'):"cctv13";
+        var urls = 'https://live.64ma.com/tv/tv.asp?pid='+flss+'&user=simon&lm=0';
+</script>
+<script>
+document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" src="'+urls+'" data="'+urls+'" name="player" id="player" width="100%" height="'+height()+'" type="application/x-shockwave-flash" ><param name="movie" value="" /><param name="quality" value="high"/><param name="allowscriptaccess" value="always"/><param name="allowfullscreen" value="true"/><param name="wmode" value="Opaque"/><param name="bgcolor" value="#000000"/><param name="flashvars" value="autoplay=true&auto=true"/><iframe  src="'+urls+'" data="'+urls+'" name="player" id="player" flashvars="autoplay=true&auto=true" height="'+height()+'" width="100%" SCROLLING="auto" frameborder="0" scroll="auto" type="application/x-shockwave-flash" quality="high" wmode="Opaque" allowfullscreen="true" disablePageFullscreen="true" allowscriptaccess="always"></iframe></object>');
+window.focus();
+function getId( s ) { var re = new RegExp( s + "=([^\&]*)"); re.exec(document.location.href); return RegExp.$1;}
+function height(){  var height=document.documentElement.clientHeight; return height; }
+</script>
+</body>
+</html>

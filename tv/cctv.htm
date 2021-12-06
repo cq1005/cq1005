@@ -1,0 +1,33 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<title></title>
+<head>
+<body>
+<div id="player" style="margin:0;padding:0;position:absolute;z-index:-1"></div>
+<table>
+<tr><td>
+<script type="text/javascript">
+function getId( f ) {
+        var re = new RegExp( f + "=([^\&]*)");
+            re.exec(document.location.href);
+            return RegExp.$1;    }
+        var fnss = getId('f')?getId('f'):"cctv13";
+     if( getId('f')== 'cctv9') fnss='cctvjilu';else fnss=fnss;
+        var key = "03798c7108aa9ad57f419fa2a1c7e155f38a6343";
+        var swfn = 'http://player.cntv.cn/standard/live_HLSDRM20180524.swf?addrs=undefined&backUrl=undefined&VideoName=' + fnss + '&ChannelID=' + fnss + '&videoTVChannel=' + fnss + '&P2PChannelID=pd://cctv_p2p_hd' + fnss + '&timeUrl=undefined&ack=yes&public=1&adCalls=&playBackType=common&ruleVisible=true&languageXml=&configURL=http://player.cntv.cn/flashplayer/config/WebHDSPlayerConfig_HD.xml&referrer=&quality=high&videoInfoPath=http://vdn.apps.cntv.cn/api/liveback.do&key=' + key + '';
+function height(){  var height=document.documentElement.clientHeight; return height; }
+document.writeln('<iframe name="player" src="' + swfn + '" quality="high" allowScriptAccess="always"  wmode="Opaque" frameborder="0" scrolling="no" type="application/x-shockwave-flash" style="top:0px;left:0px;width:100%;height:100%;border-style:none;position:absolute;z-index:-1;"></iframe>');
+window.focus();
+</script>
+<script>
+  document.getElementById("player").contentWindow.document.body.contentEditable= "true";  
+</script>
+</td></tr>
+</table>
+</div>
+</body>
+</html>

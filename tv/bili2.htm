@@ -1,0 +1,45 @@
+﻿<!DOCTYPE HTML PUBLIC>
+<html><head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<body style="margin:0;padding:0;position:absolute; width:100%; height:100%; z-index:-1" bgcolor="#454545" topmargin="0" leftmargin="0" scroll="auto"  oncontextmenu="window.event.returnValue=false">	
+<script type="text/javascript" src="//static.hdslb.com/js/jquery.min.js"></script>
+<script type="text/javascript" src="//static.hdslb.com/js/swfobject.js"></script>
+<script type="text/javascript" src="//s1.hdslb.com/bfs/static/player/main/core.f85383fc.js"></script>
+<script type="text/javascript" src="//s1.hdslb.com/bfs/static/ogv/fe/iris.min.js?v="></script>
+<script type="text/javascript" src="//s1.hdslb.com/bfs/seed/log/report/log-reporter.js" crossorigin></script>
+<script type="text/javascript" src="//s1.hdslb.com/bfs/static/blive/bpfe-dynamic-h5/static/js/detail.416bc8a5.js"></script>
+<script type="text/javascript">if(window.__INITIAL_STATE__){var jsUrls=window.__INITIAL_STATE__.insertScripts||[];function insertLink(){for(var e=["//pay.bilibili.com/paysdk/bilipay.css"],t=0;t<e.length;t++){var i=document.createElement("link");i.rel="stylesheet",i.type="text/css",i.href=e[t],document.body.appendChild(i)}}function insertScript(){if(!(window.scriptIsInject||jsUrls[0]&&-1<window.document.body.innerHTML.indexOf(jsUrls[0]))){window.scriptIsInject=!0,window.jQuery||jsUrls.unshift("//static.hdslb.com/js/jquery.min.js"),window.Promise||jsUrls.unshift("//static.hdslb.com/js/promise.auto.min.js");for(var e=0;e<jsUrls.length;e++)loadScript(jsUrls[e])}}function loadScript(e,t){var i=document.createElement("script");i.type="text/javascript",-1==(i.src=e).indexOf("jquery")&&-1==e.indexOf("promise")&&(i.crossOrigin="true"),document.body.appendChild(i),i.onload=function(){t&&t()}}insertScript();var ep=window.__INITIAL_STATE__&&window.__INITIAL_STATE__.epInfo,md=window.__INITIAL_STATE__&&window.__INITIAL_STATE__.mediaInfo;function getCookie(e){var t=new RegExp("(^| )"+e+"=([^;]*)(;|$)"),i=document.cookie.match(t);return i?unescape(i[2]):null}function setSize(){var e=md.specialCover?1070:1280,t=350,i=window.innerHeight||document.documentElement.clientHeight,n=window.innerWidth||window.document.documentElement.clientWidth,o=Math.round(md.specialCover?16*(i-264)/9-t:16*(.743*i-108.7)/9),r=n-152-t,s=r<o?r:o;s<638&&(s=638),e<s&&(s=e);var l=s+t,d=n<l+152,c=document.querySelector(".main-container");if(c.style.width=(d?l+76:l)+"px",c.style.paddingLeft=(d?76:0)+"px",c.style.marginLeft=d?"0":"",c.style.marginRight=d?"0":"",md.specialCover){var a=Math.round(9*l/16+46);(f=document.querySelector("#player_module")).style.height=a+"px",f.style.width=l+"px",f.style.paddingLeft="",f.style.left=d?"76px":"",f.style.transform=d?"none":"",f.style.webkitTransform=d?"none":"";var p=document.querySelector(".special-cover"),u=document.querySelector(".plp-l"),y=document.querySelector(".plp-r"),w=document.querySelector("#danmukuBox");p.style.height=a+218+"px",u.style.paddingTop=a+24+"px",y.style.marginTop=a+40+"px",window.isWide?(w.style.top="0px",w.style.position="relative"):(w.style.top=-(a+40)+"px",w.style.position="absolute")}else{var m=parseInt(9*(s+(window.isWide?t:0))/16)+46+(window.hasBlackSide&&!window.isWide?96:0);if((w=document.querySelector("#danmukuBox")).style.top="",w.style.position="relative",window.isWide){(f=document.querySelector("#player_module")).style.height=m-0+"px",f.style.width="",f.style.paddingLeft=d?"76px":"",f.style.left="",f.style.transform="",f.style.webkitTransform="";u=document.querySelector(".plp-l"),y=document.querySelector(".plp-r");u.style.paddingTop=m-0+"px",y.style.marginTop=m+16+"px"}else{var f;(f=document.querySelector("#player_module")).style.height=m-0+"px",f.style.width="",f.style.paddingLeft="",f.style.left="",f.style.transform="",f.style.webkitTransform="";u=document.querySelector(".plp-l"),y=document.querySelector(".plp-r");u.removeAttribute("style"),y.removeAttribute("style")}}}window.isWide=md.forceWide||!!md.specialCover||!md.multiMode,null===getCookie("CURRENT_BLACKGAP")?window.hasBlackSide=!0:window.hasBlackSide=Boolean(parseInt(getCookie("CURRENT_BLACKGAP"))),window.PlayerAgent={player_widewin:function(){window.isWide=!0,setSize()},player_fullwin:function(){window.isWide=!1,setSize()},toggleBlackSide:function(e){window.hasBlackSide=e,setSize()}},setSize(),window.document.body.style.opacity="",window.addEventListener("resize",setSize)}</script>
+<div id=player-minimal-panel-vm><minimal-panel></minimal-panel></div><div class="live-player-mounter h-100" id=live-player>
+<script>function __PLAYER_BOOTSTRAP_FUNC__(){var e=function(){window.__PLAYER_BOOTSTRAP_FUNC__=null};try{if(!window.Player)return e();var o=document.getElementById("live-player");if(!o)return e();var i=window.__NEPTUNE_IS_MY_WAIFU__||{},r=!!i.roomInitRes&&0===i.roomInitRes.code&&!!i.roomInitRes.data&&i.roomInitRes.data.room_id;if(!r)return e();var n=i.roomInitRes||{code:0},a=n.data||{};if(!a.live_status||a.is_locked||a.encrypted&&!a.pwd_verified)return e();var _={cid:r,initTime:performance.now(),roomInitDataV2:n,rnd:window.DANMU_RND,fnPromiseMode:!0,protover:2,mask:{shouldOpenMask:!0},ptype:16,backgroundFilter:!0,coreType:2,coreProtocol:0},d=new window.Player(o,_);window.EmbedPlayer={instance:d},window.performance.timing.firstscreenfinish=(new Date).getTime(),addWaifu&&addWaifu("firstscreenfinish"),addWaifu&&addWaifu("misaka"),d.on("firstLoadedMetaData",(function(){addWaifu&&addWaifu("mikoto"),window.__PLAYER_GLOBAL_INSTANCE__&&(window.__PLAYER_GLOBAL_INIT_FLAG__="我不想再说一遍")})),window.__PLAYER_GLOBAL_INSTANCE__=d}catch(e){console.error("Player Bootstrap Error: ",e)}e()}</script><script>addWaifu&&addWaifu("vert")</script>
+</div>
+<div id="bilibili-player" data-v-038b34f4></div>
+<script type="text/javascript">
+function height(){  var height=document.documentElement.clientHeight; return height; }
+function getId( f ) {
+        var re = new RegExp( f + "=([^\&]*)");
+            re.exec(document.location.href);
+            return RegExp.$1;    }
+        var flss = getId('f')?getId('f'):"";
+        var cid = getId('cid')?getId('cid'):"";
+        var bvid = getId('bvid')?getId('bvid'):"0";
+     //if(bvid<1||bvid==null) flss=0;else flss=flss;
+</script>
+<div id="player"></div>
+<script type="text/javascript">
+if(flss<10) {
+        var swfn = 'https://s1.hdslb.com/bfs/static/blive/live-assets/player/flash/pageplayer-latest.swf?room_id=' + flss + '&cid=' + cid + '&state=LIVE&autoplay=1&auto=1';
+document.write('<embed  src="'+swfn+'" name="player" id="player" flashvars="autoplay=true&auto=true" height="'+height()+'" width="100%" SCROLLING="auto" frameborder="0" scroll="auto" type="application/x-shockwave-flash" quality="high" wmode="Opaque" allowfullscreen="true" disablePageFullscreen="true" allowscriptaccess="always"></embed>');
+} else {
+        var swfn1 = 'https://static.hdslb.com/miniloader.swf?aid=' + flss + '&page=1';
+        var swfn = 'https://www.bilibili.com/blackboard/html5player.html?aid=' + flss + '&cid=' + cid + '&page=1';
+        var swfn2 = 'https://player.bilibili.com/player.html?&aid=' + flss + '&cid=' + cid + '&bvid=' + bvid + '&as_wide=1&high_quality=1&danmaku=0&t=5';
+document.writeln('<iframe src=' + swfn + ' flashvars="&page=1&autoplay=1" height="100%" width="100%" SCROLLING="auto" name="player" id="player_placeholder" type="application/x-shockwave-flash" frameborder="0" scroll="auto" quality="high" wmode="Opaque" allowfullscreen="true" disablePageFullscreen="true" allowscriptaccess="always"></iframe>');
+}
+window.focus();
+</script>
+</body>
+</html>
+
+
+

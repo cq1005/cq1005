@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC>
+<html>
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge" >
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+</head>
+<body bgcolor="#454545" topmargin="0" border="0" scroll="auto" scrolling="yes" oncontextmenu="window.event.returnValue=false" style="margin:0;padding:0;width:100%;height:100%;">
+<div  class="player" id="player" bgcolor="#000000" style="width:100%;height:100%;">
+<table width="100%" height="100%" border="0" bgcolor="#000000" cellpadding="0" cellspacing="0">
+<tr><td>
+<script>
+function height(){  var height=document.documentElement.clientHeight; return height; }
+function getId( s ) { var re = new RegExp( s + "=([^\&]*)"); re.exec(document.location.href); return RegExp.$1;}  
+var flss = getId('f')?getId('f'):"81";
+var swfn = 'http://player.kksmg.com/data/player_swf/KKPlayer.swf?playerId=2969363206&liveChannelID=' +flss;
+document.write('<iframe id="player" name="player" src="'+ swfn +'" width="100%" height="'+ height() +'" topmargin="0" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="yes" scroll="auto" bgcolor="#454545" cellpadding="0" cellspacing="0" wmode="transparent" style="width:100%;border:none;margin:0px auto; background:none;z-index:-1"/></iframe>');
+window.focus();
+</script>
+</td></tr>
+</table>
+</div>
+</body> 
+</html>
+

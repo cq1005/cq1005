@@ -1,0 +1,27 @@
+<body style="margin:0px;">
+<script>
+function height(){  var height=document.documentElement.clientHeight; return height; }
+function getId( f ) {
+        var re = new RegExp( f + "=([^\&]*)");
+            re.exec(document.location.href);
+            return RegExp.$1;    }
+        var ulss = getId('f');
+</script>
+<script>
+    var date = new Date(); 
+    var month = date.getMonth() + 1; 
+    var strDate = date.getDate(); 
+    if (month >= 1 && month <= 9) { 
+        month = "0" + month; 
+    } 
+    if (strDate >= 0 && strDate <= 9) { 
+        strDate = "0" + strDate; 
+    } 
+    var currentdate = month + strDate ; 
+    var year = date.getFullYear(); 
+if (ulss =="" ) ulss = currentdate;else ulss=ulss;
+    var str =year + ulss ;
+document.write('<iframe src="http://cwebdx.compass.cn/news2/cache/' + str + '/?v=1/" width="100%" height="'+height()+'"  SCROLLING="auto" frameborder="0"></iframe>');
+window.focus();
+</script>
+</body>

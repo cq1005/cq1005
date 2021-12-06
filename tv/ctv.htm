@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC>
+<html><head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<script>function heigh(){  var height=document.documentElement.clientHeight; return height; }</script>
+<script>
+function onKeyDown(){if ((event.keyCode==116)||(window.event.ctrlKey)||(window.event.shiftKey)||(event.keyCode==122)||(event.keyCode==123)){event.keyCode=0;event.returnValue=false;}}
+</script>
+<body onkeydown="onKeyDown()" oncontextmenu="return false" onselectstart="return false" ondragstart="return false" >
+<script>
+        var urls = 'http://www.tvniu.com/live.php';
+</script>
+<div class="itv">
+<div class="player">
+<script>
+document.write('<iframe id="iframe-player" name="iframe-player" src="'+urls+'" width="100%" height="'+heigh()+'" SCROLLING="auto" scrolling="no" frameborder="0"></iframe>');
+window.focus();
+</script>
+</body>
+</html>

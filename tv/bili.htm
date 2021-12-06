@@ -1,0 +1,39 @@
+﻿<!DOCTYPE HTML PUBLIC>
+<html><head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<body style="margin:0;padding:0;position:absolute; width:100%; height:100%; z-index:-1" bgcolor="#454545" topmargin="0" leftmargin="0" scroll="auto"  oncontextmenu="window.event.returnValue=false">	
+<script type="text/javascript" src="//static.hdslb.com/js/jquery.min.js"></script>
+<script type="text/javascript" src="//static.hdslb.com/js/swfobject.js"></script>
+</div>
+<script type="text/javascript">
+function height(){  var height=document.documentElement.clientHeight; return height; }
+function getId( w ) {
+        var re = new RegExp( w + "=([^\&]*)");
+            re.exec(document.location.href);
+            return RegExp.$1;    }
+        var flss = getId('f')?getId('f'):"";
+        var cid = getId('cid')?getId('cid'):"";
+        var bvid = getId('bvid')?getId('bvid'):"0";
+     if(bvid<1||bvid==null) flss=0;else flss=flss;
+</script>
+<div id="player"></div>
+<script type="text/javascript">
+if(flss<10) {
+        var swfn = 'https://s1.hdslb.com/bfs/static/blive/live-assets/player/flash/pageplayer-latest.swf?room_id=' + flss + '&cid=' + cid + '&state=LIVE&autoplay=1&auto=1';
+document.write('<embed  src="'+swfn+'" name="player" id="player" flashvars="autoplay=true&auto=true" height="'+height()+'" width="100%" SCROLLING="auto" frameborder="0" scroll="auto" type="application/x-shockwave-flash" quality="high" wmode="Opaque" allowfullscreen="true" disablePageFullscreen="true" allowscriptaccess="always"></embed>');
+} else {
+        //var swfn = 'https://www.bilibili.com/html/player.html?aid=' + flss + '&cid=' + cid + '&page=1&autoplay=true';
+        //var swfn = 'https://www.bilibili.com/blackboard/html5player.html?aid=' + flss + '&cid=' + cid + '&page=1&autoplay=true';
+        var swfn = 'http://player.bilibili.com/player.html?&aid=' + flss + '&cid=' + cid + '&page=1&autoplay=true';
+        //var swfn = 'https://player.bilibili.com/player.html?&aid=' + flss + '&cid=' + cid + '&bvid=' + bvid + '&autoplay=true&as_wide=1&high_quality=1&danmaku=0&t=5';
+/*document.writeln('<iframe src=' + swfn + ' flashvars="&page=1&autoplay=1" height="100%" width="100%" SCROLLING="auto" name="player" id="player" type="application/x-shockwave-flash" frameborder="0" scroll="auto" quality="high" wmode="Opaque" allowfullscreen="true" disablePageFullscreen="true" allowscriptaccess="always"></iframe>');*/
+document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" src="'+swfn+'" name="player" id="player" width="100%" height="'+height()+'" type="application/x-shockwave-flash" ><param name="movie" value="" /><param name="quality" value="high"/><param name="allowscriptaccess" value="always"/><param name="allowfullscreen" value="true"/><param name="wmode" value="Opaque"/><param name="bgcolor" value="#000000"/><param name="flashvars" value="&auto=true"/><iframe  src="'+swfn+'" name="player" id="player" flashvars="&auto=true" height="'+height()+'" width="100%" SCROLLING="auto" frameborder="0" scroll="auto" type="application/x-shockwave-flash" quality="high" wmode="Opaque" allowfullscreen="true" disablePageFullscreen="true" allowscriptaccess="always"></iframe></object>');
+}
+window.focus();
+</script>
+</body>
+</html>
+
+
+

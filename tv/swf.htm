@@ -1,0 +1,125 @@
+﻿<!DOCTYPE HTML PUBLIC>
+<html><head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta http-equiv="x-ua-compatible" content="IE=edge" >
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+<script type="text/javascript">
+function getId( f ) {  var re = new RegExp( f + "=([^\&]*)");  re.exec(document.location.href);   return RegExp.$1;    }
+function height(){  var height=document.documentElement.clientHeight; return height; }
+function onKeyDown(){if ((event.keyCode==116)||(window.event.ctrlKey)||(window.event.shiftKey)||(event.keyCode==122)||(event.keyCode==123)){event.keyCode=0;event.returnValue=false;}}
+function flss(){
+var flss = getId('f')?getId('f'):"";
+return flss;
+}
+var mlss = getId('m')?getId('m'):"";
+var alss = getId('a')?getId('a'):"";
+</script>
+</head>
+<body onKeyDown="onKeyDown()" style="margin:0;width:100%;height:100%;position:absolute;z-index:-1" topmargin="0" bgcolor="#454545" border="0" scroll="auto" scrolling="yes"  oncontextmenu="window.event.returnValue=false">
+<!--<div class="itv">-->
+<div class="player">
+<table width="100%" height="100%" border="0" bgcolor="#000000" cellpadding="0" cellspacing="0">
+<tr><td>
+<script type="text/javascript">
+if( mlss == 'hyv') {
+document.write("<script type='text/javascript' src='http://a.msstatic.com/huya/common/jquery-1.11.1.min.js'><\/scr" + "ipt>");
+document.write("<script type='text/javascript' src='http://www.huya.com/base/js/push/json3.min.js'><\/scr" + "ipt>");
+document.write("<script type='text/javascript' src='https://www.huya.com/base/js/push/jquery.xdomainrequest.min.js'><\/scr" + "ipt>");
+document.write("<script type='text/javascript' src='https://static-jw.msstatic.com/huya-sentry/bundle.min.js'><\/scr" + "ipt>");
+}else if( mlss == 'bi'||mlss == 'bis') {
+document.write("<script type='text/javascript' src='https://s1.hdslb.com/bfs/static/player/live/loader/player-loader-1.8.5.min.js'><\/scr" + "ipt>");
+document.write("<script type='text/javascript' src='https://s1.hdslb.com/bfs/static/player/main/video.js'><\/scr" + "ipt>");
+document.write("<script type='text/javascript' src='https://s1.hdslb.com/bfs/static/blive/live-web-mng/static/js/manifest.6fe771705b543840cb4e.js'><\/scr" + "ipt>");
+document.write("<script type='text/javascript' src='https://s1.hdslb.com/bfs/static/blive/live-assets/player/libs/swfobject.js'><\/scr" + "ipt>");
+}else if( mlss == 'dy') {
+document.write("<script type='text/javascript' src='http://code.jquery.com/jquery-1.8.2.min.js'><\/scr" + "ipt>");
+document.write("<script type='text/javascript' src='https://www.douyu.com/front-publish/shark-flash-master/v2/swfobject.js'><\/scr" + "ipt>");
+}else if( mlss == 'cu') {
+document.write("<script type='text/javascript' src='http://tv.cutv.com/scripts/cutvTvLiveInPage.js'><\/scr" + "ipt>");
+document.write("<script type='text/javascript' src='http://tv.cutv.com/scripts/cutvChannelLivePlayer.js'><\/scr" + "ipt>");
+}else if( mlss == 'yy') {
+document.write("<script type='text/javascript' src='https://static.hdslb.com/live-static/libs/jquery/jquery-1.11.3.min.js'><\/scr" + "ipt>");
+document.write("<script type='text/javascript' src='http://code.jquery.com/jquery-1.8.2.min.js'><\/scr" + "ipt>");
+}else if( mlss == 'hy'){
+document.write("<script type='text/javascript' src='http://a.msstatic.com/huya/common/jquery-1.11.1.min.js'><\/scr" + "ipt>");
+}else if( mlss == 'xg'){
+document.write("<script type='text/javascript' src='https://s3.pstatp.com/toutiao/xigua_video_web_pc/static/js/runtime~embed.1a52da02.js'><\/scr" + "ipt>");
+document.write("<script type='text/javascript' src='https://s3.pstatp.com/toutiao/xigua_video_web_pc/static/js/embed.8b8ce296.chunk.js'><\/scr" + "ipt>");
+}
+</script>
+<script type="text/javascript">
+    var height = height()-3;
+    var flss = flss();
+    var id = "player";
+if( mlss == 'hy') {
+    var swfn = 'http://liveshare.huya.com/iframe/'+flss;
+}else if( mlss == 'hyv') {
+    var swfn = 'https://hd.huya.com/h5/liveshare/index.html?lp='+flss+'&rso=tdsy&button=0&danmu=0&auto=1&autoplay=1';
+}else if( mlss == 'ntv'||mlss == 'ctv') {
+    var swfn = 'http://www.tvniu.com/live.php?tvid='+flss;
+}else if( mlss == 'bi'||mlss == 'bis') {
+        var aid = getId('aid')?getId('aid'):"";
+        var cid = getId('cid')?getId('cid'):"";
+        var bvid = getId('bvid')?getId('bvid'):"";
+        var swfn = 'https://s1.hdslb.com/bfs/static/blive/live-assets/player/flash/pageplayer-latest.swf?room_id=' + flss + '&cid=' + cid + '&state=LIVE&autoplay=1&auto=1';
+}else if( mlss == 'bim') {
+        var aid = getId('aid')?getId('aid'):"";
+        var cid = getId('cid')?getId('cid'):"";
+        var bvid = getId('bvid')?getId('bvid'):"";
+        var swfn = 'https://player.bilibili.com/player.html?&autoplay=true&aid=' + flss + '&cid=' + cid + '&bvid=' + bvid + '&page=1&as_wide=1&high_quality=1&danmaku=0&t=5';
+}else if( mlss == 'xg') {
+        var swfn = 'https://www.ixigua.com/embed/?group_id='+flss;
+}else if( mlss == 'hb') {
+        var swfn = 'http://app.cjyun.org/video/videojs/index?site_id=10008&live_type=1&id='+flss+'&thumb=&next=&autostart=1&type=&sid=10008&customid=15&channel=';
+}else if( mlss == 'cu') {
+        var swfn = 'http://tv.cutv.com/player/cv.swf?channelId=' + flss + '&autoplay=1';
+}else if( mlss == '64') {
+        var swfn = 'https://live.64ma.com/tv/tv.asp?pid='+flss+'&user=simon&lm=0';
+}else if( mlss == 'sh') {
+        var swfn = 'http://player.kksmg.com/data/player_swf/KKPlayer.swf?playerId=2969363206&liveChannelID='+flss;
+}else if( mlss == 'dy') {
+        var swfn = 'https://staticlive.douyucdn.cn/common/share/play.swf?room_id='+flss;
+}else if( mlss == 'dyin') {
+        var swfn = 'https://aweme.snssdk.com/aweme/v1/playwm/?video_id='+flss+'&ratio=720p&line=0';
+}else if( mlss == 'qe') {
+        var swfn = 'https://m.egame.qq.com/live?anchorid='+flss;
+}else if( mlss == 'qqu') {
+        var swfn = 'http://imgcache.qq.com/open/qcloud/video/player/release/QCPlayer.swf?&autoplay=true&url='+flss;
+}else if( mlss == 'qqt') {
+        var apid = getId('apid');
+        var swfn = 'https://imgcache.qq.com/open/qcloud/video/act/tcplayer/ifpage/tcvideo.html?&autoplay=true&sw=1440&sh=750&appid='+apid+'&fileid='+flss;
+}else if( mlss == 'qqv') {
+        var apid = getId('apid');
+        var swfn = 'http://imgcache.qq.com/open/qcloud/video/flash/video_player.swf?&autoplay=1&app_id='+apid+'&file_id='+flss;
+}else if( mlss == 'qqd') {
+        var apid = getId('apid');
+        var swfn = 'https://playvideo.qcloud.com/vod/0/iplayer.html?&autoplay=1&sw=1440&sh=750&app_id='+apid+'&file_id='+flss;
+}else if( mlss == 'qqe') {
+        var swfn = 'https://cloud.tencent.com/edu/learning/quick-play/'+flss+'?source=gw.doc.media&withPoster=1&notip=1';
+}else if( mlss == 'qqm') {
+        var swfn = '../m.htm?&f='+flss;
+}else if( mlss == 'yy') {
+        var cid = getId('cid')?getId('cid'):"";
+        var swfn = 'http://weblbs.yystatic.com/s/' + flss + '/' + cid + '/yycomscene.swf&autoplay=1';
+}else if( mlss == 'cctv') {
+ if( getId('f')== 'cctv9') flss='cctvjilu';else flss=flss;
+        var swfn = 'http://player.cntv.cn/standard/live_HLSDRM20180524.swf?addrs=undefined&backUrl=undefined&VideoName=' + flss + '&ChannelID=' + flss + '&videoTVChannel=' + flss + '&P2PChannelID=pd://cctv_p2p_hd' + flss + '&timeUrl=undefined&ack=yes&public=1&adCalls=&playBackType=common&ruleVisible=true&languageXml=&configURL=http://player.cntv.cn/flashplayer/config/WebHDSPlayerConfig_HD.xml&referrer=&quality=high&videoInfoPath=http://vdn.apps.cntv.cn/api/liveback.do&';
+}else {
+    var swfn = 'http://liveshare.huya.com/iframe/'+flss;
+}
+if( mlss == 'bi'||mlss == 'bis') {
+document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" src="'+swfn+'" data="'+swfn+'" name="'+id+'" id="'+id+'" width="100%" height="'+height+'" type="application/x-shockwave-flash" ><param name="movie" value="" /><param name="quality" value="high"/><param name="allowscriptaccess" value="always"/><param name="allowfullscreen" value="true"/><param name="wmode" value="Opaque"/><param name="bgcolor" value="#000000"/><param name="flashvars" value="autoplay=true&auto=true"/><embed  src="'+swfn+'" data="'+swfn+'" name="'+id+'" id="'+id+'" flashvars="autoplay=true&auto=true" height="'+height+'" width="100%" SCROLLING="auto" frameborder="0" scroll="auto" type="application/x-shockwave-flash" quality="high" wmode="Opaque" allowfullscreen="true" disablePageFullscreen="true" allowscriptaccess="always"></embed></object>');
+}else {
+document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" src="'+swfn+'" data="'+swfn+'" name="'+id+'" id="'+id+'" width="100%" height="'+height+'" type="application/x-shockwave-flash" ><param name="movie" value="" /><param name="quality" value="high"/><param name="allowscriptaccess" value="always"/><param name="allowfullscreen" value="true"/><param name="wmode" value="Opaque"/><param name="bgcolor" value="#000000"/><param name="flashvars" value="autoplay=true&auto=true"/><iframe  src="'+swfn+'" data="'+swfn+'" name="'+id+'" id="'+id+'" flashvars="autoplay=true&auto=true" height="'+height+'" width="100%" SCROLLING="auto" frameborder="0" scroll="auto" type="application/x-shockwave-flash" quality="high" wmode="Opaque" allowfullscreen="true" disablePageFullscreen="true" allowscriptaccess="always"></iframe></object>');
+}
+window.focus();
+</script>
+<script>
+  document.getElementById("player").contentWindow.document.body.contentEditable= "true";  
+</script>
+</td></tr>
+</table>
+</div>
+</body>
+</html>
