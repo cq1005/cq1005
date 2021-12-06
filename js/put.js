@@ -277,7 +277,7 @@ var huiid =  fkss();
 var videoid = fmss();
 function slist(){ 
 var s=slss();var a=alss();var p=plss();var t=tlss();var u=ulss();var us=ulss();var f=fkss();var w=wlss();
-var slist = './st/'+lists()+'?&s=' + s + '&a=' + a + '&p=' + p + '&u=' + us + '&t=' + t + '&w=' + w + '&' ;
+var slist = './st/'+listn()+'?&s=' + s + '&a=' + a + '&p=' + p + '&u=' + us + '&t=' + t + '&w=' + w + '&' ;
 //var slist = './st/'+lists()+'?&s=' + s + '&a=' + a + '&p=' + p + '&u=' + us + '&t=' + t + '&f=' + f + '&w=' + w + '&' ;
 return slist;
 }
@@ -365,7 +365,7 @@ return type;
 }
 function listn(){
 var ssmv = '';
-if(slss()==0) ssmv="plist.htm";else if(slss()==1) ssmv="wlist.htm";else if(slss()==2) ssmv="clist.htm";else if(slss()==3) ssmv="dlist.htm";else if(slss()==4) ssmv="flist.htm";else ssmv="slist.php" ;
+if(slss()==0) ssmv="plist.htm";else if(slss()==1) ssmv="wlist.htm";else if(slss()==2) ssmv="clist.htm";else if(slss()==3) ssmv="dlist.htm";else if(slss()==4) ssmv="flist.htm";else ssmv="flist.htm" ;
 return ssmv;
 }
 function lists(){
