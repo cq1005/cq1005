@@ -15,7 +15,7 @@ event.returnValue = false;
 break;
 case 46:
 //Delete;
-if(confirm("É¾³ýµ±Ç°Ñ¡Ïî!?"))
+if(confirm("åˆ é™¤å½“å‰é€‰é¡¹!?"))
 {
 sel.options[sel.selectedIndex] = null;
 if(sel.length>0)
@@ -104,10 +104,10 @@ function showsubmenu(){
 	whichEl = eval("list");
 	if (whichEl.style.display == "none") {
 		eval("list.style.display=\"\";");
-		idFlag.innerHTML = "<div class='close'><a href='#' title='¹Ø±ÕÁÐ±í'></a></div>";
+		idFlag.innerHTML = "<div class='close'><a href='#' title='å…³é—­åˆ—è¡¨'></a></div>";
 	}else {
 		eval("list.style.display=\"none\";");
-		idFlag.innerHTML = "<div class='open'><a href='#' title='´ò¿ªÁÐ±í'></a>";
+		idFlag.innerHTML = "<div class='open'><a href='#' title='æ‰“å¼€åˆ—è¡¨'></a>";
 	}
  }
 	var cookie = {
@@ -142,7 +142,7 @@ function showsubmenu(){
 	if(cookieTime > 0) { 
 		videoObject['seek'] = cookieTime;
 	}
-	function loadedHandler() { //²¥·ÅÆ÷¼ÓÔØºó»áµ÷ÓÃ¸Ãº¯Êý
+	function loadedHandler() { //æ’­æ”¾å™¨åŠ è½½åŽä¼šè°ƒç”¨è¯¥å‡½æ•°
 		playerLoad = true;
 	}
 	function loadHandler() {
@@ -373,7 +373,7 @@ var ssmv = '';
 if(slss().indexOf("dy") >0||slss().indexOf("dsj") >0||slss().indexOf("mv") >0) ssmv="mvlist.php";
 else if(slss().indexOf("tv")>0||slss().indexOf("zb")>0||slss().indexOf("av")>0|slss().indexOf("zg")>0||slss().indexOf("hb")>0) ssmv="tvlist.php";
 else if(slss().indexOf("so")>0||slss().indexOf("yu") >0||slss().indexOf("yun") >0) ssmv="solist.php";
-else if(slss().indexOf("zx") >0||slss().indexOf("xw") >0) ssmv="zxlist.php";else if(slss()==1) ssmv="wlist.htm";else if(slss()==2) ssmv="clist.htm";else if(slss()==3) ssmv="dlist.htm";else if(slss()==4) ssmv="flist.htm";else ssmv="plist.php";
+else if(slss().indexOf("zx") >0||slss().indexOf("xw") >0) ssmv="zxlist.php";else if(slss()==1) ssmv="wlist.htm";else if(slss()==2) ssmv="clist.htm";else if(slss()==3) ssmv="dlist.htm";else if(slss()==4) ssmv="flist.htm";else ssmv="plist.htm";
 return ssmv;
 }
 function listz(){
@@ -396,7 +396,7 @@ var cfts6 = "http://112.132.209.46/keonline.shanghai.liveplay.qq.com/live/progra
 var cfts7 = "http://219.151.31.43/keonline.shanghai.liveplay.qq.com/live/program/live/";
 var cfts8 = "http://112.132.209.46/"//125.74.5.39//14.152.88.77
 var fdss = getId('f')?getId('f'):"http://cctvalih5ca.v.myalicdn.com/live/cctv13_2/index.m3u8";
-var fss = "http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8";//Ïã¸Û
+var fss = "http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8";//é¦™æ¸¯
   if( fdss==null||fdss=="") ftss =fss;else ftss=fdss;
   if( fdss.length >16 && fdss.length <26 && fdss.indexOf("http") < 0){
  ftss="https://api.leduotv.com/wp-api/glid.php?vid=" + fdss;//XMMTY2ODczMDAwMF8xNzE=
@@ -404,7 +404,7 @@ var fss = "http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8";//Ïã¸Û
 //ftss="https://api.xxctzy.com/wp-api/ifr.php?vid=" + fdss;
 //ftss="https://api.leduotv.com/wp-api/ifr.php?vid=" + fdss;
 } else if( fdss.length <16) {
-  if( fdss=="0"|| fdss=="jspd") ftss =cfts5 + "jspdhd/4000000/mnf.m3u8";//¼ÍÊµÆµµÀ;
+  if( fdss=="0"|| fdss=="jspd") ftss =cfts5 + "jspdhd/4000000/mnf.m3u8";//çºªå®žé¢‘é“;
 else if( fdss=="1"|| fdss=="cctv1") ftss =cfts + "cctv1_2/index.m3u8";//cctv1;
 else if( fdss=="2"|| fdss=="cctv2") ftss =cfts5 + "cctv2/1300000/mnf.m3u8";//cctv2;
 else if( fdss=="3"|| fdss=="cctv3") ftss =cfts5 + "cctv3hd/4000000/mnf.m3u8";//cctv3;
@@ -419,121 +419,121 @@ else if(fdss=="11"|| fdss=="cctv11") ftss =cfts + "cctv11_2/index.m3u8";//cctv11
 else if(fdss=="12"|| fdss=="cctv12") ftss =cfts + "cctv12_2/index.m3u8";//cctv12;
 else if(fdss=="13"|| fdss=="cctv13") ftss =cfts + "cctv13_2/index.m3u8";//cctv13;
 else if(fdss=="14"|| fdss=="cctv14"|| fdss=="child") ftss =cfts + "cctvchild_2/index.m3u8";//cctv14;
-else if(fdss=="15"|| fdss=="cctv15") ftss =cfts + "cctv15_2/index.m3u8";//ÒôÀÖ;
-else if(fdss=="16"|| fdss=="btv1"||fdss=="bjws") ftss =cfts5 + "bjws/1300000/mnf.m3u8";//±±¾©ÎÀÊÓ;
+else if(fdss=="15"|| fdss=="cctv15") ftss =cfts + "cctv15_2/index.m3u8";//éŸ³ä¹;
+else if(fdss=="16"|| fdss=="btv1"||fdss=="bjws") ftss =cfts5 + "bjws/1300000/mnf.m3u8";//åŒ—äº¬å«è§†;
 else if(fdss=="17"|| fdss=="cctv17") ftss =cfts + "cctv17_2/index.m3u8";//cctv17;
-else if(fdss=="18"|| fdss=="laozuo") ftss ="http://cclive2.aniu.tv/live/anzb.m3u8";//ÀÏ×ó;
-else if(fdss=="19"|| fdss=="dycj"|| fdss=="caijing") ftss =cfts5 + "dycjhd/4000000/mnf.m3u8"; //µÚÒ»²Æ¾­
-else if(fdss=="20"|| fdss=="qixiang"|| fdss=="tianqi") ftss =cfts5 + "zgqx/1300000/mnf.m3u8"; //ÆøÏó;
-else if(fdss=="21"|| fdss=="dfys"|| fdss=="dongfang") ftss =cfts5 + "dsjpdhd/4000000/mnf.m3u8";//¶«·½Ó°ÊÓ
-else if(fdss=="22"|| fdss=="sxws1"||fdss=="shanxi1") ftss =cfts5 + "shanxiws/1300000/mnf.m3u8";//É½Î÷ÎÀÊÓ;
-else if(fdss=="23"|| fdss=="scws"||fdss=="sicuan") ftss =cfts5 + "scws/1300000/mnf.m3u8";     //ËÄ´¨ÎÀÊÓ;
-else if(fdss=="24"|| fdss=="dfws"||fdss=="dongfang") ftss =cfts5 + "hddfws/4000000/mnf.m3u8"; //¶«·½ÎÀÊÓ
-else if(fdss=="25"|| fdss=="hbws"|| fdss=="hubei") ftss =cfts5 + "hbwshd/4000000/mnf.m3u8";   //ºþ±±ÎÀÊÓ
-else if(fdss=="26"|| fdss=="jsws"|| fdss=="jiangsu") ftss =cfts5 + "jswshd/4000000/mnf.m3u8"; //½­ËÕÎÀÊÓ
-else if(fdss=="27"|| fdss=="tjws"||fdss=="tianjin") ftss =cfts5 + "tjwshd/4000000/mnf.m3u8";  //Ìì½òÎÀÊÓ
-else if(fdss=="28"|| fdss=="gzws"||fdss=="guizou") ftss =cfts5 + "gzws/1300000/mnf.m3u8";     //¹óÖÝÎÀÊÓ
-else if(fdss=="29"|| fdss=="jlws"||fdss=="jilin") ftss =cfts5 + "btws/1300000/mnf.m3u8";      //¼ªÁÖÎÀÊÓ
-else if(fdss=="30"|| fdss=="sdws"||fdss=="shandong") ftss =cfts5 + "sdwshd/4000000/mnf.m3u8"; //É½¶«ÎÀÊÓ
-else if(fdss=="31"|| fdss=="hnws"||fdss=="hunan") ftss =cfts5 + "hnwshd/4000000/mnf.m3u8";    //ºþÄÏÎÀÊÓ
-else if(fdss=="32"|| fdss=="btes"||fdss=="bintuan") ftss =cfts5 + "jlws/1300000/mnf.m3u8";    //±øÍÅÎÀÊÓ
-else if(fdss=="33"|| fdss=="lnws"||fdss=="liaoning") ftss =cfts5 + "lnwshd/4000000/mnf.m3u8"; //ÁÉÄþÎÀÊÓ
-else if(fdss=="34"|| fdss=="hljws"||fdss=="heilongjiang") ftss =cfts5 + "hljwshd/4000000/mnf.m3u8"; //ºÚÁú½­ÎÀÊÓ
-else if(fdss=="35"|| fdss=="qjs" ||fdss=="quanjishi") ftss =cfts5 + "qjshd/4000000/mnf.m3u8";//È«¼ÍÊµ
-else if(fdss=="36"|| fdss=="ahws"||fdss=="anhui") ftss =cfts5 + "ahwshd/4000000/mnf.m3u8";    //°²»ÕÎÀÊÓ
-else if(fdss=="37"|| fdss=="szws"||fdss=="senzen") ftss =cfts5 + "szwshd/4000000/mnf.m3u8";//ÉîÛÚÎÀÊÓ
-else if(fdss=="38"|| fdss=="dnws"||fdss=="dongnan") ftss =cfts5 + "dnwshd/4000000/mnf.m3u8";//¶«ÄÏÎÀÊÓ
-else if(fdss=="39"|| fdss=="ynws"||fdss=="yunnan") ftss =cfts5 + "ynws/1300000/mnf.m3u8";//ÔÆÄÏÎÀÊÓ
-else if(fdss=="40"|| fdss=="qhws"||fdss=="qinghai") ftss =cfts5 + "qhws/1300000/mnf.m3u8";//Çàº£ÎÀÊÓ
-else if(fdss=="41"|| fdss=="hbws1"||fdss=="hebei1") ftss =cfts5 + "hbws/1300000/mnf.m3u8";//ºÓ±±ÎÀÊÓ
-else if(fdss=="42"|| fdss=="hnws" ||fdss=="henan" ) ftss =cfts5 + "hnws/1300000/mnf.m3u8";//ºÓÄÏÎÀÊÓ
-else if(fdss=="43"|| fdss=="sxws" ||fdss=="sanxi2") ftss =cfts5 + "sxws/1300000/mnf.m3u8";//ÉÂÎ÷ÎÀÊÓ
+else if(fdss=="18"|| fdss=="laozuo") ftss ="http://cclive2.aniu.tv/live/anzb.m3u8";//è€å·¦;
+else if(fdss=="19"|| fdss=="dycj"|| fdss=="caijing") ftss =cfts5 + "dycjhd/4000000/mnf.m3u8"; //ç¬¬ä¸€è´¢ç»
+else if(fdss=="20"|| fdss=="qixiang"|| fdss=="tianqi") ftss =cfts5 + "zgqx/1300000/mnf.m3u8"; //æ°”è±¡;
+else if(fdss=="21"|| fdss=="dfys"|| fdss=="dongfang") ftss =cfts5 + "dsjpdhd/4000000/mnf.m3u8";//ä¸œæ–¹å½±è§†
+else if(fdss=="22"|| fdss=="sxws1"||fdss=="shanxi1") ftss =cfts5 + "shanxiws/1300000/mnf.m3u8";//å±±è¥¿å«è§†;
+else if(fdss=="23"|| fdss=="scws"||fdss=="sicuan") ftss =cfts5 + "scws/1300000/mnf.m3u8";     //å››å·å«è§†;
+else if(fdss=="24"|| fdss=="dfws"||fdss=="dongfang") ftss =cfts5 + "hddfws/4000000/mnf.m3u8"; //ä¸œæ–¹å«è§†
+else if(fdss=="25"|| fdss=="hbws"|| fdss=="hubei") ftss =cfts5 + "hbwshd/4000000/mnf.m3u8";   //æ¹–åŒ—å«è§†
+else if(fdss=="26"|| fdss=="jsws"|| fdss=="jiangsu") ftss =cfts5 + "jswshd/4000000/mnf.m3u8"; //æ±Ÿè‹å«è§†
+else if(fdss=="27"|| fdss=="tjws"||fdss=="tianjin") ftss =cfts5 + "tjwshd/4000000/mnf.m3u8";  //å¤©æ´¥å«è§†
+else if(fdss=="28"|| fdss=="gzws"||fdss=="guizou") ftss =cfts5 + "gzws/1300000/mnf.m3u8";     //è´µå·žå«è§†
+else if(fdss=="29"|| fdss=="jlws"||fdss=="jilin") ftss =cfts5 + "btws/1300000/mnf.m3u8";      //å‰æž—å«è§†
+else if(fdss=="30"|| fdss=="sdws"||fdss=="shandong") ftss =cfts5 + "sdwshd/4000000/mnf.m3u8"; //å±±ä¸œå«è§†
+else if(fdss=="31"|| fdss=="hnws"||fdss=="hunan") ftss =cfts5 + "hnwshd/4000000/mnf.m3u8";    //æ¹–å—å«è§†
+else if(fdss=="32"|| fdss=="btes"||fdss=="bintuan") ftss =cfts5 + "jlws/1300000/mnf.m3u8";    //å…µå›¢å«è§†
+else if(fdss=="33"|| fdss=="lnws"||fdss=="liaoning") ftss =cfts5 + "lnwshd/4000000/mnf.m3u8"; //è¾½å®å«è§†
+else if(fdss=="34"|| fdss=="hljws"||fdss=="heilongjiang") ftss =cfts5 + "hljwshd/4000000/mnf.m3u8"; //é»‘é¾™æ±Ÿå«è§†
+else if(fdss=="35"|| fdss=="qjs" ||fdss=="quanjishi") ftss =cfts5 + "qjshd/4000000/mnf.m3u8";//å…¨çºªå®ž
+else if(fdss=="36"|| fdss=="ahws"||fdss=="anhui") ftss =cfts5 + "ahwshd/4000000/mnf.m3u8";    //å®‰å¾½å«è§†
+else if(fdss=="37"|| fdss=="szws"||fdss=="senzen") ftss =cfts5 + "szwshd/4000000/mnf.m3u8";//æ·±åœ³å«è§†
+else if(fdss=="38"|| fdss=="dnws"||fdss=="dongnan") ftss =cfts5 + "dnwshd/4000000/mnf.m3u8";//ä¸œå—å«è§†
+else if(fdss=="39"|| fdss=="ynws"||fdss=="yunnan") ftss =cfts5 + "ynws/1300000/mnf.m3u8";//äº‘å—å«è§†
+else if(fdss=="40"|| fdss=="qhws"||fdss=="qinghai") ftss =cfts5 + "qhws/1300000/mnf.m3u8";//é’æµ·å«è§†
+else if(fdss=="41"|| fdss=="hbws1"||fdss=="hebei1") ftss =cfts5 + "hbws/1300000/mnf.m3u8";//æ²³åŒ—å«è§†
+else if(fdss=="42"|| fdss=="hnws" ||fdss=="henan" ) ftss =cfts5 + "hnws/1300000/mnf.m3u8";//æ²³å—å«è§†
+else if(fdss=="43"|| fdss=="sxws" ||fdss=="sanxi2") ftss =cfts5 + "sxws/1300000/mnf.m3u8";//é™•è¥¿å«è§†
 
-else if(fdss=="44"|| fdss=="fzzh" ||fdss=="fuzou1") ftss ="http://live.zohi.tv/video/s10001-FZTV-1/index.m3u8";//¸£ÖÝ×ÛºÏ
-else if(fdss=="45"|| fdss=="fzys" ||fdss=="fuzou2") ftss ="http://live.zohi.tv/video/s10001-yspd-2/index.m3u8";//¸£ÖÝÓ°ÊÓ
-else if(fdss=="46"|| fdss=="fzsh" ||fdss=="fuzou3") ftss ="http://live.zohi.tv/video/s10001-shpd-3/index.m3u8";//¸£ÖÝÉú»î
-else if(fdss=="47"|| fdss=="zjws"|| fdss=="zhejiang") ftss ="http://hw-m-l.cztv.com/channels/lantian/channel01/1080p.m3u8";//Õã½­ÎÀÊÓ
-else if(fdss=="48"|| fdss=="qjws"|| fdss=="qianjiang") ftss ="http://hw-m-l.cztv.com/channels/lantian/channel02/1080p.m3u8";//Ç®½­ÎÀÊÓ
-else if(fdss=="49"|| fdss=="zjjj"|| fdss=="zhejiang1") ftss ="http://hw-m-l.cztv.com/channels/lantian/channel03/1080p.m3u8";//Õã½­¾­¼Ã
-else if(fdss=="50"|| fdss=="zjkj"|| fdss=="zhejiang2") ftss ="http://hw-m-l.cztv.com/channels/lantian/channel04/1080p.m3u8";//Õã½­¿Æ½Ì
-else if(fdss=="51"|| fdss=="zjys"|| fdss=="zhejiang3" ) ftss ="http://hw-m-l.cztv.com/channels/lantian/channel05/1080p.m3u8";//Õã½­Ó°ÊÓ
-else if(fdss=="52"|| fdss=="hfxw"||fdss=="hefei1") ftss ="http://223.244.92.30:808/2774goN/1000/live.m3u8";//ºÏ·ÊÐÂÎÅ
-else if(fdss=="53"|| fdss=="hfsh"||fdss=="hefei2") ftss ="http://223.244.92.30:808/xcd72q7/1000/live.m3u8";//ºÏ·ÊÉú»î
-else if(fdss=="54"|| fdss=="hffz"||fdss=="hefei3") ftss ="http://223.244.92.30:808/x91Hoz8/1000/live.m3u8";//ºÏ·Ê·¨ÖÆ
-else if(fdss=="55"|| fdss=="hfwt"||fdss=="hefei4") ftss ="http://223.244.92.30:808/52e58Sh/1000/live.m3u8";//ºÏ·ÊÎÄÌå
-else if(fdss=="56"|| fdss=="whxw"||fdss=="wuhu1") ftss ="http://live1.wuhubtv.com/channel1/sd/live.m3u8";//ÎßºþÐÂÎÅ
-else if(fdss=="57"|| fdss=="whsh"||fdss=="wuhu2") ftss ="http://live1.wuhubtv.com/channel2/sd/live.m3u8";//ÎßºþÉú»î
-else if(fdss=="58"|| fdss=="whgg"||fdss=="wuhu3") ftss ="http://live1.wuhubtv.com/channel3/sd/live.m3u8";//Îßºþ¹«¹²
-else if(fdss=="59"|| fdss=="whjy"||fdss=="wuhu4") ftss ="http://live1.wuhubtv.com/channel4/sd/live.m3u8";//Îßºþ½ÌÓý
-else if(fdss=="60"|| fdss=="laxw"||fdss=="liuan1") ftss ="http://live.china-latv.com/channel1/sd/live.m3u8";//Áù°²ÐÂÎÅ
-else if(fdss=="61"|| fdss=="lagg"||fdss=="liuan2") ftss ="http://live.china-latv.com/channel1/sd/live.m3u8";//Áù°²¹«¹²
-else if(fdss=="62"|| fdss=="ycsh"||fdss=="yincuan1") ftss ="http://stream.ycgbtv.com.cn/ycxw/sd/live.m3u8";//Òø´¨Éú»î
-else if(fdss=="63"|| fdss=="ycgg"||fdss=="yincuan2") ftss ="http://stream.ycgbtv.com.cn/ycgg/sd/live.m3u8";//Òø´¨¹«¹²
-else if(fdss=="64"|| fdss=="xzxw"||fdss=="xuzou1") ftss ="http://stream1.huaihai.tv/xwzh/playlist.m3u8";//ÐìÖÝÐÂÎÅ
-else if(fdss=="65"|| fdss=="xzjj"||fdss=="xuzou2") ftss ="http://stream1.huaihai.tv/jjsh/playlist.m3u8";//ÐìÖÝ¾­¼Ã
-else if(fdss=="66"|| fdss=="xzys"||fdss=="xuzou3") ftss ="http://stream1.huaihai.tv/wyys/playlist.m3u8";//ÐìÖÝÓ°ÊÓ
-else if(fdss=="67"|| fdss=="xzgg"||fdss=="xuzou4") ftss ="http://stream1.huaihai.tv/ggpd/playlist.m3u8";//ÐìÖÝ¹«¹²
-else if(fdss=="68"|| fdss=="btxw"||fdss=="baotou1") ftss ="http://live.btgdt.com/channels/btgd/xwzh/m3u8:500k/live";//°üÍ·ÐÂÎÅ
-else if(fdss=="69"|| fdss=="btsh"||fdss=="baotou2") ftss ="http://live.btgdt.com/channels/btgd/shfw/m3u8:500k/live";//°üÍ·Éú»î
-else if(fdss=="70"|| fdss=="btjj"||fdss=="baotou3") ftss ="http://live.btgdt.com/channels/btgd/jjpd/m3u8:500k/live";//°üÍ·¾­¼Ã
-else if(fdss=="71"|| fdss=="zsxw"||fdss=="zousan1") ftss ="http://live.wifizs.cn/xwzh/sd/live.m3u8";//ÖÛÉ½ÐÂÎÅ
-else if(fdss=="71"|| fdss=="zsgg"||fdss=="zousan2") ftss ="http://live.wifizs.cn/ggsh/sd/live.m3u8";//ÖÛÉ½¹«¹²
-else if(fdss=="71"|| fdss=="zsly"||fdss=="zousan3") ftss ="http://live.wifizs.cn/qdly/sd/live.m3u8";//ÖÛÉ½ÂÃÓÎ
-else if(fdss=="74"|| fdss=="szzh"||fdss=="suzou1") ftss ="http://live.ahsz.tv/video/s10001-szzh/index.m3u8";//ËÞÖÝ×ÛºÏ
-else if(fdss=="75"|| fdss=="szgg"||fdss=="suzou2") ftss ="http://live.ahsz.tv/video/s10001-ggpd/index.m3u8";//ËÞÖÝ¹«¹²
-else if(fdss=="76"|| fdss=="szkj"||fdss=="suzou3") ftss ="http://live.ahsz.tv/video/s10001-kxjy/index.m3u8";//ËÞÖÝ¿Æ½Ì
-else if(fdss=="77"|| fdss=="hsgg"||fdss=="hstv2") ftss ="http://hls.hsrtv.cn/hls/hstv2.m3u8";//ºâË®¹«¹²
-else if(fdss=="78"|| fdss=="hsxw"||fdss=="hstv1") ftss ="http://hls.hsrtv.cn/hls/hstv1.m3u8";//ºâË®ÐÂÎÅ
-else if(fdss=="79"|| fdss=="hsys"||fdss=="hstv3") ftss ="http://hls.hsrtv.cn/hls/hstv3.m3u8";//ºâË®Ó°ÊÓ
-else if(fdss=="80"|| fdss=="hbzh"||fdss=="hebi") ftss ="http://pili-live-hls.hebitv.com/hebi/hebi.m3u8 ";//º×±Ú×ÛºÏ
-else if(fdss=="81"|| fdss=="zjg"||fdss=="zhangjiagang") ftss ="http://3gvod.zjgonline.com.cn:1935/live/xinwenzonghe2/playlist.m3u8";//ÕÅ¼Ò¸ÛÐÂÎÅ
-else if(fdss=="82"|| fdss=="dyzh"||fdss=="dongyin1") ftss ="http://stream.hhek.cn/xwzh/sd/live.m3u8";//¶«Óª×ÛºÏ
-else if(fdss=="83"|| fdss=="dykj"||fdss=="dongyin2") ftss ="http://stream.hhek.cn/dyjy/sd/live.m3u8";//¶«Óª¿Æ½Ì
-else if(fdss=="84"|| fdss=="dygg"||fdss=="dongyin3") ftss ="http://stream.hhek.cn/ggpd/sd/live.m3u8";//¶«Óª¹«¹²
-else if(fdss=="85"|| fdss=="xaxw"||fdss=="xian1") ftss ="http://stream2.xiancity.cn/xatv1/sd/live.m3u8";//Î÷°²ÐÂÎÅ
-else if(fdss=="86"|| fdss=="xabg"||fdss=="xian2") ftss ="http://stream2.xiancity.cn/xatv2/sd/live.m3u8";//Î÷°²°×¸ë
-else if(fdss=="87"|| fdss=="xazx"||fdss=="xian3") ftss ="http://stream2.xiancity.cn/xatv3/sd/live.m3u8";//Î÷°²×ÊÑ¶
-else if(fdss=="88"|| fdss=="xays"||fdss=="xian4") ftss ="http://stream2.xiancity.cn/xatv4/sd/live.m3u8";//Î÷°²Ó°ÊÓ
-else if(fdss=="89"|| fdss=="yyxw"||fdss=="yuyao1") ftss ="http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8";//ÓàÒ¦ÐÂÎÅ
-else if(fdss=="90"|| fdss=="yywh"||fdss=="yuyao2") ftss ="http://l.cztvcloud.com/channels/lantian/SXyuyao2/720p.m3u8";//ÓàÒ¦ÎÄ»¯
-else if(fdss=="91"|| fdss=="yysh"||fdss=="yuyao3") ftss ="http://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8";//ÓàÒ¦Éú»î
-else if(fdss=="92"|| fdss=="xsxw"||fdss=="xiaosan1") ftss ="http://l.cztvcloud.com/channels/lantian/SXxiaoshan1/720p.m3u8";//ÏôÉ½ÐÂÎÅ
-else if(fdss=="93"|| fdss=="xssh"||fdss=="xiaosan2") ftss ="http://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8";//ÏôÉ½Éú»î
-else if(fdss=="94"|| fdss=="syxw"||fdss=="shangyu1") ftss ="http://l.cztvcloud.com/channels/lantian/SXshangyu1/720p.m3u8 ";//ÉÏÓÝÐÂÎÅ
-else if(fdss=="95"|| fdss=="syjj"||fdss=="shangyu2") ftss ="http://l.cztvcloud.com/channels/lantian/SXshangyu2/720p.m3u8";//ÉÏÓÝ¾­¼Ã
-else if(fdss=="96"|| fdss=="xcxw"||fdss=="xincang1") ftss ="http://l.cztvcloud.com/channels/lantian/SXxinchang1/720p.m3u8";//ÐÂ²ýÐÂÎÅ
-else if(fdss=="97"|| fdss=="xcys"||fdss=="xincang2") ftss ="http://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8";//ÐÂ²ýÓ°ÊÓ
-else if(fdss=="98"|| fdss=="szxw"||fdss=="senzou") ftss ="http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8";//áÓÖÝÐÂÎÅ
-else if(fdss=="99"|| fdss=="lygzh"||fdss=="lianyungang1") ftss ="http://live.lyg1.com/zhpd/sd/live.m3u8";//Á¬ÔÆ¸Û×ÛºÏ
-else if(fdss=="100"|| fdss=="lyggg"||fdss=="lianyungang2") ftss ="http://live.lyg1.com/ggpd/sd/live.m3u8";//Á¬ÔÆ¸Û¹«¹²
-else if(fdss=="101"|| fdss=="sdys"||fdss=="sandong1") ftss ="http://livealone302.iqilu.com/iqilu/yspd.m3u8";//É½¶«Ó°ÊÓ
-else if(fdss=="102"|| fdss=="sdzy"||fdss=="sandong2") ftss ="http://livealone302.iqilu.com/iqilu/zypd.m3u8";//É½¶«×ÛÒÕ
-else if(fdss=="103"|| fdss=="sdsh"||fdss=="sandong3") ftss ="http://livealone302.iqilu.com/iqilu/shpd.m3u8";//É½¶«Éú»î
-else if(fdss=="104"|| fdss=="sdgg"||fdss=="sandong4") ftss ="http://livealone302.iqilu.com/iqilu/ggpd.m3u8";//É½¶«¹«¹²
-else if(fdss=="105"|| fdss=="sdnk"||fdss=="sandong5") ftss ="http://livealone302.iqilu.com/iqilu/nkpd.m3u8";//É½¶«Å©¿Æ
-else if(fdss=="106"|| fdss=="sdty"||fdss=="sandong6") ftss ="http://livealone302.iqilu.com/iqilu/typd.m3u8";//É½¶«ÌåÓý
-else if(fdss=="107"|| fdss=="sdql"||fdss=="sandong7") ftss ="http://livealone302.iqilu.com/iqilu/qlpd.m3u8";//É½¶«ÆëÂ³
-else if(fdss=="108"|| fdss=="ntxw"||fdss=="nantong1") ftss ="http://cm.wshls.homecdn.com/live/7cc9.m3u8";//ÄÏÍ¨ÐÂÎÅ
-else if(fdss=="109"|| fdss=="ntsj"||fdss=="nantong2") ftss ="http://cm.wshls.homecdn.com/live/7cc7.m3u8";//ÄÏÍ¨2
-else if(fdss=="110"|| fdss=="ntgg"||fdss=="nantong3") ftss ="http://cm.wshls.homecdn.com/live/7cc5.m3u8";//ÄÏÍ¨¹«¹²
-else if(fdss=="111"|| fdss=="ntcc"||fdss=="nantong4") ftss ="http://cm.wshls.homecdn.com/live/7cc1.m3u8";//³ç´¨TV
-else if(fdss=="112"|| fdss=="ntxn"||fdss=="nantong5") ftss ="http://cm.wshls.homecdn.com/live/139a3.m3u8";//XnÐÂÎÅ
-else if(fdss=="113"|| fdss=="scjj"||fdss=="sicuan1") ftss ="http://scgctvshow.sctv.com/hdlive/sctv2/1.m3u8";//ËÄ´¨¾­¼Ã
-else if(fdss=="114"|| fdss=="scwh"||fdss=="sicuan2") ftss ="http://scgctvshow.sctv.com/hdlive/sctv3/1.m3u8";//ËÄ´¨ÎÄ»¯
-else if(fdss=="115"|| fdss=="sxxw"||fdss=="sicuan3") ftss ="http://scgctvshow.sctv.com/hdlive/sctv4/1.m3u8";//ËÄ´¨ÐÂÎÅ
-else if(fdss=="116"|| fdss=="scys"||fdss=="sicuan4") ftss ="http://scgctvshow.sctv.com/hdlive/sctv5/1.m3u8";//ËÄ´¨Ó°ÊÓ
-else if(fdss=="117"|| fdss=="sc7"||fdss=="sicuan5") ftss ="http://scgctvshow.sctv.com/hdlive/sctv7/1.m3u8";//ËÄ´¨7
-else if(fdss=="118"|| fdss=="scxc"||fdss=="sicuan5") ftss ="http://scgctvshow.sctv.com/hdlive/sctv9/1.m3u8";//ËÄ´¨Ïç´å
-else if(fdss=="119"|| fdss=="kmjj"||fdss=="kunming1") ftss ="http://wshls.live.migucloud.com/live/01YCQY7M_C0/playlist.m3u8";//À¥Ã÷¾­¼Ã
-else if(fdss=="120"|| fdss=="kmkx"||fdss=="kunming2") ftss ="http://wshls.live.migucloud.com/live/ZBXWIMTD_C0/playlist.m3u8";//À¥Ã÷¿ÆÑ§
-else if(fdss=="121"|| fdss=="kmly"||fdss=="kunming3") ftss ="http://wshls.live.migucloud.com/live/6KN3ZB2S_C0/playlist.m3u8";//À¥Ã÷ÓéÀÖ
-else if(fdss=="122"|| fdss=="kmys"||fdss=="kunming4") ftss ="http://wshls.live.migucloud.com/live/KYLNJWFD_C0/playlist.m3u8";//À¥Ã÷Ó°ÊÓ
-else if(fdss=="123"|| fdss=="kmgg"||fdss=="kunming5") ftss ="http://wshls.live.migucloud.com/live/UD0YLY2G_C0/playlist.m3u8";//À¥Ã÷¹«¹²
-else if(fdss=="124"|| fdss=="hbjj"||fdss=="hebei1") ftss ="http://live2.plus.hebtv.com/jjshx/hd/live.m3u8";//ºÓ±±¾­¼Ã
-else if(fdss=="125"|| fdss=="hbjj"||fdss=="hebei2") ftss ="http://live3.plus.hebtv.com/hbdsx/hd/live.m3u8";//ºÓ±±¶¼ÊÐ
-else if(fdss=="126"|| fdss=="hbjj"||fdss=="hebei3") ftss ="http://live4.plus.hebtv.com/hbysx/hd/live.m3u8";//ºÓ±±Ó°ÊÓ
-else if(fdss=="127"|| fdss=="hbjj"||fdss=="hebei4") ftss ="http://live7.plus.hebtv.com/hbggx/hd/live.m3u8";//ºÓ±±¹«¹²
-else if(fdss=="128"|| fdss=="hbjj"||fdss=="hebei5") ftss ="http://live3.plus.hebtv.com/nmpdx/hd/live.m3u8";//ºÓ±±Å©Ãñ
+else if(fdss=="44"|| fdss=="fzzh" ||fdss=="fuzou1") ftss ="http://live.zohi.tv/video/s10001-FZTV-1/index.m3u8";//ç¦å·žç»¼åˆ
+else if(fdss=="45"|| fdss=="fzys" ||fdss=="fuzou2") ftss ="http://live.zohi.tv/video/s10001-yspd-2/index.m3u8";//ç¦å·žå½±è§†
+else if(fdss=="46"|| fdss=="fzsh" ||fdss=="fuzou3") ftss ="http://live.zohi.tv/video/s10001-shpd-3/index.m3u8";//ç¦å·žç”Ÿæ´»
+else if(fdss=="47"|| fdss=="zjws"|| fdss=="zhejiang") ftss ="http://hw-m-l.cztv.com/channels/lantian/channel01/1080p.m3u8";//æµ™æ±Ÿå«è§†
+else if(fdss=="48"|| fdss=="qjws"|| fdss=="qianjiang") ftss ="http://hw-m-l.cztv.com/channels/lantian/channel02/1080p.m3u8";//é’±æ±Ÿå«è§†
+else if(fdss=="49"|| fdss=="zjjj"|| fdss=="zhejiang1") ftss ="http://hw-m-l.cztv.com/channels/lantian/channel03/1080p.m3u8";//æµ™æ±Ÿç»æµŽ
+else if(fdss=="50"|| fdss=="zjkj"|| fdss=="zhejiang2") ftss ="http://hw-m-l.cztv.com/channels/lantian/channel04/1080p.m3u8";//æµ™æ±Ÿç§‘æ•™
+else if(fdss=="51"|| fdss=="zjys"|| fdss=="zhejiang3" ) ftss ="http://hw-m-l.cztv.com/channels/lantian/channel05/1080p.m3u8";//æµ™æ±Ÿå½±è§†
+else if(fdss=="52"|| fdss=="hfxw"||fdss=="hefei1") ftss ="http://223.244.92.30:808/2774goN/1000/live.m3u8";//åˆè‚¥æ–°é—»
+else if(fdss=="53"|| fdss=="hfsh"||fdss=="hefei2") ftss ="http://223.244.92.30:808/xcd72q7/1000/live.m3u8";//åˆè‚¥ç”Ÿæ´»
+else if(fdss=="54"|| fdss=="hffz"||fdss=="hefei3") ftss ="http://223.244.92.30:808/x91Hoz8/1000/live.m3u8";//åˆè‚¥æ³•åˆ¶
+else if(fdss=="55"|| fdss=="hfwt"||fdss=="hefei4") ftss ="http://223.244.92.30:808/52e58Sh/1000/live.m3u8";//åˆè‚¥æ–‡ä½“
+else if(fdss=="56"|| fdss=="whxw"||fdss=="wuhu1") ftss ="http://live1.wuhubtv.com/channel1/sd/live.m3u8";//èŠœæ¹–æ–°é—»
+else if(fdss=="57"|| fdss=="whsh"||fdss=="wuhu2") ftss ="http://live1.wuhubtv.com/channel2/sd/live.m3u8";//èŠœæ¹–ç”Ÿæ´»
+else if(fdss=="58"|| fdss=="whgg"||fdss=="wuhu3") ftss ="http://live1.wuhubtv.com/channel3/sd/live.m3u8";//èŠœæ¹–å…¬å…±
+else if(fdss=="59"|| fdss=="whjy"||fdss=="wuhu4") ftss ="http://live1.wuhubtv.com/channel4/sd/live.m3u8";//èŠœæ¹–æ•™è‚²
+else if(fdss=="60"|| fdss=="laxw"||fdss=="liuan1") ftss ="http://live.china-latv.com/channel1/sd/live.m3u8";//å…­å®‰æ–°é—»
+else if(fdss=="61"|| fdss=="lagg"||fdss=="liuan2") ftss ="http://live.china-latv.com/channel1/sd/live.m3u8";//å…­å®‰å…¬å…±
+else if(fdss=="62"|| fdss=="ycsh"||fdss=="yincuan1") ftss ="http://stream.ycgbtv.com.cn/ycxw/sd/live.m3u8";//é“¶å·ç”Ÿæ´»
+else if(fdss=="63"|| fdss=="ycgg"||fdss=="yincuan2") ftss ="http://stream.ycgbtv.com.cn/ycgg/sd/live.m3u8";//é“¶å·å…¬å…±
+else if(fdss=="64"|| fdss=="xzxw"||fdss=="xuzou1") ftss ="http://stream1.huaihai.tv/xwzh/playlist.m3u8";//å¾å·žæ–°é—»
+else if(fdss=="65"|| fdss=="xzjj"||fdss=="xuzou2") ftss ="http://stream1.huaihai.tv/jjsh/playlist.m3u8";//å¾å·žç»æµŽ
+else if(fdss=="66"|| fdss=="xzys"||fdss=="xuzou3") ftss ="http://stream1.huaihai.tv/wyys/playlist.m3u8";//å¾å·žå½±è§†
+else if(fdss=="67"|| fdss=="xzgg"||fdss=="xuzou4") ftss ="http://stream1.huaihai.tv/ggpd/playlist.m3u8";//å¾å·žå…¬å…±
+else if(fdss=="68"|| fdss=="btxw"||fdss=="baotou1") ftss ="http://live.btgdt.com/channels/btgd/xwzh/m3u8:500k/live";//åŒ…å¤´æ–°é—»
+else if(fdss=="69"|| fdss=="btsh"||fdss=="baotou2") ftss ="http://live.btgdt.com/channels/btgd/shfw/m3u8:500k/live";//åŒ…å¤´ç”Ÿæ´»
+else if(fdss=="70"|| fdss=="btjj"||fdss=="baotou3") ftss ="http://live.btgdt.com/channels/btgd/jjpd/m3u8:500k/live";//åŒ…å¤´ç»æµŽ
+else if(fdss=="71"|| fdss=="zsxw"||fdss=="zousan1") ftss ="http://live.wifizs.cn/xwzh/sd/live.m3u8";//èˆŸå±±æ–°é—»
+else if(fdss=="71"|| fdss=="zsgg"||fdss=="zousan2") ftss ="http://live.wifizs.cn/ggsh/sd/live.m3u8";//èˆŸå±±å…¬å…±
+else if(fdss=="71"|| fdss=="zsly"||fdss=="zousan3") ftss ="http://live.wifizs.cn/qdly/sd/live.m3u8";//èˆŸå±±æ—…æ¸¸
+else if(fdss=="74"|| fdss=="szzh"||fdss=="suzou1") ftss ="http://live.ahsz.tv/video/s10001-szzh/index.m3u8";//å®¿å·žç»¼åˆ
+else if(fdss=="75"|| fdss=="szgg"||fdss=="suzou2") ftss ="http://live.ahsz.tv/video/s10001-ggpd/index.m3u8";//å®¿å·žå…¬å…±
+else if(fdss=="76"|| fdss=="szkj"||fdss=="suzou3") ftss ="http://live.ahsz.tv/video/s10001-kxjy/index.m3u8";//å®¿å·žç§‘æ•™
+else if(fdss=="77"|| fdss=="hsgg"||fdss=="hstv2") ftss ="http://hls.hsrtv.cn/hls/hstv2.m3u8";//è¡¡æ°´å…¬å…±
+else if(fdss=="78"|| fdss=="hsxw"||fdss=="hstv1") ftss ="http://hls.hsrtv.cn/hls/hstv1.m3u8";//è¡¡æ°´æ–°é—»
+else if(fdss=="79"|| fdss=="hsys"||fdss=="hstv3") ftss ="http://hls.hsrtv.cn/hls/hstv3.m3u8";//è¡¡æ°´å½±è§†
+else if(fdss=="80"|| fdss=="hbzh"||fdss=="hebi") ftss ="http://pili-live-hls.hebitv.com/hebi/hebi.m3u8 ";//é¹¤å£ç»¼åˆ
+else if(fdss=="81"|| fdss=="zjg"||fdss=="zhangjiagang") ftss ="http://3gvod.zjgonline.com.cn:1935/live/xinwenzonghe2/playlist.m3u8";//å¼ å®¶æ¸¯æ–°é—»
+else if(fdss=="82"|| fdss=="dyzh"||fdss=="dongyin1") ftss ="http://stream.hhek.cn/xwzh/sd/live.m3u8";//ä¸œè¥ç»¼åˆ
+else if(fdss=="83"|| fdss=="dykj"||fdss=="dongyin2") ftss ="http://stream.hhek.cn/dyjy/sd/live.m3u8";//ä¸œè¥ç§‘æ•™
+else if(fdss=="84"|| fdss=="dygg"||fdss=="dongyin3") ftss ="http://stream.hhek.cn/ggpd/sd/live.m3u8";//ä¸œè¥å…¬å…±
+else if(fdss=="85"|| fdss=="xaxw"||fdss=="xian1") ftss ="http://stream2.xiancity.cn/xatv1/sd/live.m3u8";//è¥¿å®‰æ–°é—»
+else if(fdss=="86"|| fdss=="xabg"||fdss=="xian2") ftss ="http://stream2.xiancity.cn/xatv2/sd/live.m3u8";//è¥¿å®‰ç™½é¸½
+else if(fdss=="87"|| fdss=="xazx"||fdss=="xian3") ftss ="http://stream2.xiancity.cn/xatv3/sd/live.m3u8";//è¥¿å®‰èµ„è®¯
+else if(fdss=="88"|| fdss=="xays"||fdss=="xian4") ftss ="http://stream2.xiancity.cn/xatv4/sd/live.m3u8";//è¥¿å®‰å½±è§†
+else if(fdss=="89"|| fdss=="yyxw"||fdss=="yuyao1") ftss ="http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8";//ä½™å§šæ–°é—»
+else if(fdss=="90"|| fdss=="yywh"||fdss=="yuyao2") ftss ="http://l.cztvcloud.com/channels/lantian/SXyuyao2/720p.m3u8";//ä½™å§šæ–‡åŒ–
+else if(fdss=="91"|| fdss=="yysh"||fdss=="yuyao3") ftss ="http://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8";//ä½™å§šç”Ÿæ´»
+else if(fdss=="92"|| fdss=="xsxw"||fdss=="xiaosan1") ftss ="http://l.cztvcloud.com/channels/lantian/SXxiaoshan1/720p.m3u8";//è§å±±æ–°é—»
+else if(fdss=="93"|| fdss=="xssh"||fdss=="xiaosan2") ftss ="http://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8";//è§å±±ç”Ÿæ´»
+else if(fdss=="94"|| fdss=="syxw"||fdss=="shangyu1") ftss ="http://l.cztvcloud.com/channels/lantian/SXshangyu1/720p.m3u8 ";//ä¸Šè™žæ–°é—»
+else if(fdss=="95"|| fdss=="syjj"||fdss=="shangyu2") ftss ="http://l.cztvcloud.com/channels/lantian/SXshangyu2/720p.m3u8";//ä¸Šè™žç»æµŽ
+else if(fdss=="96"|| fdss=="xcxw"||fdss=="xincang1") ftss ="http://l.cztvcloud.com/channels/lantian/SXxinchang1/720p.m3u8";//æ–°æ˜Œæ–°é—»
+else if(fdss=="97"|| fdss=="xcys"||fdss=="xincang2") ftss ="http://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8";//æ–°æ˜Œå½±è§†
+else if(fdss=="98"|| fdss=="szxw"||fdss=="senzou") ftss ="http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8";//åµŠå·žæ–°é—»
+else if(fdss=="99"|| fdss=="lygzh"||fdss=="lianyungang1") ftss ="http://live.lyg1.com/zhpd/sd/live.m3u8";//è¿žäº‘æ¸¯ç»¼åˆ
+else if(fdss=="100"|| fdss=="lyggg"||fdss=="lianyungang2") ftss ="http://live.lyg1.com/ggpd/sd/live.m3u8";//è¿žäº‘æ¸¯å…¬å…±
+else if(fdss=="101"|| fdss=="sdys"||fdss=="sandong1") ftss ="http://livealone302.iqilu.com/iqilu/yspd.m3u8";//å±±ä¸œå½±è§†
+else if(fdss=="102"|| fdss=="sdzy"||fdss=="sandong2") ftss ="http://livealone302.iqilu.com/iqilu/zypd.m3u8";//å±±ä¸œç»¼è‰º
+else if(fdss=="103"|| fdss=="sdsh"||fdss=="sandong3") ftss ="http://livealone302.iqilu.com/iqilu/shpd.m3u8";//å±±ä¸œç”Ÿæ´»
+else if(fdss=="104"|| fdss=="sdgg"||fdss=="sandong4") ftss ="http://livealone302.iqilu.com/iqilu/ggpd.m3u8";//å±±ä¸œå…¬å…±
+else if(fdss=="105"|| fdss=="sdnk"||fdss=="sandong5") ftss ="http://livealone302.iqilu.com/iqilu/nkpd.m3u8";//å±±ä¸œå†œç§‘
+else if(fdss=="106"|| fdss=="sdty"||fdss=="sandong6") ftss ="http://livealone302.iqilu.com/iqilu/typd.m3u8";//å±±ä¸œä½“è‚²
+else if(fdss=="107"|| fdss=="sdql"||fdss=="sandong7") ftss ="http://livealone302.iqilu.com/iqilu/qlpd.m3u8";//å±±ä¸œé½é²
+else if(fdss=="108"|| fdss=="ntxw"||fdss=="nantong1") ftss ="http://cm.wshls.homecdn.com/live/7cc9.m3u8";//å—é€šæ–°é—»
+else if(fdss=="109"|| fdss=="ntsj"||fdss=="nantong2") ftss ="http://cm.wshls.homecdn.com/live/7cc7.m3u8";//å—é€š2
+else if(fdss=="110"|| fdss=="ntgg"||fdss=="nantong3") ftss ="http://cm.wshls.homecdn.com/live/7cc5.m3u8";//å—é€šå…¬å…±
+else if(fdss=="111"|| fdss=="ntcc"||fdss=="nantong4") ftss ="http://cm.wshls.homecdn.com/live/7cc1.m3u8";//å´‡å·TV
+else if(fdss=="112"|| fdss=="ntxn"||fdss=="nantong5") ftss ="http://cm.wshls.homecdn.com/live/139a3.m3u8";//Xnæ–°é—»
+else if(fdss=="113"|| fdss=="scjj"||fdss=="sicuan1") ftss ="http://scgctvshow.sctv.com/hdlive/sctv2/1.m3u8";//å››å·ç»æµŽ
+else if(fdss=="114"|| fdss=="scwh"||fdss=="sicuan2") ftss ="http://scgctvshow.sctv.com/hdlive/sctv3/1.m3u8";//å››å·æ–‡åŒ–
+else if(fdss=="115"|| fdss=="sxxw"||fdss=="sicuan3") ftss ="http://scgctvshow.sctv.com/hdlive/sctv4/1.m3u8";//å››å·æ–°é—»
+else if(fdss=="116"|| fdss=="scys"||fdss=="sicuan4") ftss ="http://scgctvshow.sctv.com/hdlive/sctv5/1.m3u8";//å››å·å½±è§†
+else if(fdss=="117"|| fdss=="sc7"||fdss=="sicuan5") ftss ="http://scgctvshow.sctv.com/hdlive/sctv7/1.m3u8";//å››å·7
+else if(fdss=="118"|| fdss=="scxc"||fdss=="sicuan5") ftss ="http://scgctvshow.sctv.com/hdlive/sctv9/1.m3u8";//å››å·ä¹¡æ‘
+else if(fdss=="119"|| fdss=="kmjj"||fdss=="kunming1") ftss ="http://wshls.live.migucloud.com/live/01YCQY7M_C0/playlist.m3u8";//æ˜†æ˜Žç»æµŽ
+else if(fdss=="120"|| fdss=="kmkx"||fdss=="kunming2") ftss ="http://wshls.live.migucloud.com/live/ZBXWIMTD_C0/playlist.m3u8";//æ˜†æ˜Žç§‘å­¦
+else if(fdss=="121"|| fdss=="kmly"||fdss=="kunming3") ftss ="http://wshls.live.migucloud.com/live/6KN3ZB2S_C0/playlist.m3u8";//æ˜†æ˜Žå¨±ä¹
+else if(fdss=="122"|| fdss=="kmys"||fdss=="kunming4") ftss ="http://wshls.live.migucloud.com/live/KYLNJWFD_C0/playlist.m3u8";//æ˜†æ˜Žå½±è§†
+else if(fdss=="123"|| fdss=="kmgg"||fdss=="kunming5") ftss ="http://wshls.live.migucloud.com/live/UD0YLY2G_C0/playlist.m3u8";//æ˜†æ˜Žå…¬å…±
+else if(fdss=="124"|| fdss=="hbjj"||fdss=="hebei1") ftss ="http://live2.plus.hebtv.com/jjshx/hd/live.m3u8";//æ²³åŒ—ç»æµŽ
+else if(fdss=="125"|| fdss=="hbjj"||fdss=="hebei2") ftss ="http://live3.plus.hebtv.com/hbdsx/hd/live.m3u8";//æ²³åŒ—éƒ½å¸‚
+else if(fdss=="126"|| fdss=="hbjj"||fdss=="hebei3") ftss ="http://live4.plus.hebtv.com/hbysx/hd/live.m3u8";//æ²³åŒ—å½±è§†
+else if(fdss=="127"|| fdss=="hbjj"||fdss=="hebei4") ftss ="http://live7.plus.hebtv.com/hbggx/hd/live.m3u8";//æ²³åŒ—å…¬å…±
+else if(fdss=="128"|| fdss=="hbjj"||fdss=="hebei5") ftss ="http://live3.plus.hebtv.com/nmpdx/hd/live.m3u8";//æ²³åŒ—å†œæ°‘
 }else ftss = ftss;
 return ftss;
 }
@@ -566,7 +566,7 @@ var fss = "http://cctvalih5ca.v.myalicdn.com/live/cctv13_2/index.m3u8";
 //ftss="https://api.xxctzy.com/wp-api/ifr.php?vid=" + fdss;
 //ftss="https://api.leduotv.com/wp-api/ifr.php?vid=" + fdss;
 } else if( fdss.length <16) {
-ftss[0]  =cfts5 + "jspdhd/4000000/mnf.m3u8";//¼ÍÊµÆµµÀ;
+ftss[0]  =cfts5 + "jspdhd/4000000/mnf.m3u8";//çºªå®žé¢‘é“;
 ftss[1]  =cfts + "cctv1_2/index.m3u8";//cctv1;
 ftss[2]  =cfts5 + "cctv2/1300000/mnf.m3u8";//cctv2;
 ftss[3]  =cfts5 + "cctv3hd/4000000/mnf.m3u8";//cctv3;
@@ -580,122 +580,122 @@ ftss[10] =cfts + "cctv10_2/index.m3u8";//cctv10;
 ftss[11] =cfts + "cctv11_2/index.m3u8";//cctv11;
 ftss[12] =cfts + "cctv12_2/index.m3u8";//cctv12;
 ftss[13] =cfts + "cctv13_2/index.m3u8";//cctv13;
-ftss[14] =cfts + "cctvchild_2/index.m3u8"; //ÉÙ¶ù;
-ftss[15] =cfts + "cctv15_2/index.m3u8"; //ÒôÀÖ;
-ftss[16] =cfts5 + "bjws/1300000/mnf.m3u8"; //±±¾©ÎÀÊÓ
+ftss[14] =cfts + "cctvchild_2/index.m3u8"; //å°‘å„¿;
+ftss[15] =cfts + "cctv15_2/index.m3u8"; //éŸ³ä¹;
+ftss[16] =cfts5 + "bjws/1300000/mnf.m3u8"; //åŒ—äº¬å«è§†
 ftss[17] =cfts + "cctv17_2/index.m3u8";//cctv17;
-ftss[18] ="http://cclive2.aniu.tv/live/anzb.m3u8";//ÀÏ×ó;
-ftss[19] =cfts5 + "dycjhd/4000000/mnf.m3u8";  //µÚÒ»²Æ¾­
-ftss[20] =cfts5 + "zgqx/1300000/mnf.m3u8";    //ÆøÏó;
-ftss[21] =cfts5 + "dsjpdhd/4000000/mnf.m3u8"; //¶«·½Ó°ÊÓ
-ftss[22] =cfts5 + "shanxiws/1300000/mnf.m3u8";    //É½Î÷ÎÀÊÓ;
-ftss[23] =cfts5 + "scws/1300000/mnf.m3u8";    //ËÄ´¨ÎÀÊÓ;
-ftss[24] =cfts5 + "hddfws/4000000/mnf.m3u8";  //¶«·½ÎÀÊÓ
-ftss[25] =cfts5 + "hbwshd/4000000/mnf.m3u8";  //ºþ±±ÎÀÊÓ
-ftss[26] =cfts5 + "jswshd/4000000/mnf.m3u8";  //½­ËÕÎÀÊÓ
-ftss[27] =cfts5 + "tjwshd/4000000/mnf.m3u8";  //Ìì½òÎÀÊÓ
-ftss[28] =cfts5 + "gzws/1300000/mnf.m3u8";    //¹óÖÝÎÀÊÓ
-ftss[29] =cfts5 + "jlws/1300000/mnf.m3u8";    //¼ªÁÖÎÀÊÓ
-ftss[30] =cfts5 + "sdwshd/4000000/mnf.m3u8";  //É½¶«ÎÀÊÓ
-ftss[31] =cfts5 + "hnwshd/4000000/mnf.m3u8";  //ºþÄÏÎÀÊÓ
-ftss[32] =cfts5 + "btws/1300000/mnf.m3u8";    //±øÍÅÎÀÊÓ
-ftss[33] =cfts5 + "lnwshd/4000000/mnf.m3u8";  //ÁÉÄþÎÀÊÓ
-ftss[34] =cfts5 + "hljwshd/4000000/mnf.m3u8"; //ºÚÁú½­ÎÀÊÓ
-ftss[35] =cfts5 + "qjshd/4000000/mnf.m3u8";//È«¼ÍÊµ
-ftss[36] =cfts5 + "ahwshd/4000000/mnf.m3u8";  //°²»ÕÎÀÊÓ
-ftss[37] =cfts5 + "szwshd/4000000/mnf.m3u8";//ÉîÛÚÎÀÊÓ
-ftss[38] =cfts5 + "dnwshd/4000000/mnf.m3u8";//¶«ÄÏÎÀÊÓ
-ftss[39] =cfts5 + "ynws/1300000/mnf.m3u8";//ÔÆÄÏÎÀÊÓ
-ftss[40] =cfts5 + "qhws/1300000/mnf.m3u8";//Çàº£ÎÀÊÓ
-ftss[41] =cfts5 + "hbws/1300000/mnf.m3u8";//ºÓ±±ÎÀÊÓ
-ftss[42] =cfts5 + "hnws/1300000/mnf.m3u8";//ºÓÄÏÎÀÊÓ
-ftss[43] =cfts5 + "sxws/1300000/mnf.m3u8";//ÉÂÎ÷ÎÀÊÓ
-ftss[44] ="http://live.zohi.tv/video/s10001-FZTV-1/index.m3u8";//¸£ÖÝ×ÛºÏ
-ftss[45] ="http://live.zohi.tv/video/s10001-yspd-2/index.m3u8";//¸£ÖÝÓ°ÊÓ
-ftss[46] ="http://live.zohi.tv/video/s10001-shpd-3/index.m3u8";//¸£ÖÝÉú»î
+ftss[18] ="http://cclive2.aniu.tv/live/anzb.m3u8";//è€å·¦;
+ftss[19] =cfts5 + "dycjhd/4000000/mnf.m3u8";  //ç¬¬ä¸€è´¢ç»
+ftss[20] =cfts5 + "zgqx/1300000/mnf.m3u8";    //æ°”è±¡;
+ftss[21] =cfts5 + "dsjpdhd/4000000/mnf.m3u8"; //ä¸œæ–¹å½±è§†
+ftss[22] =cfts5 + "shanxiws/1300000/mnf.m3u8";    //å±±è¥¿å«è§†;
+ftss[23] =cfts5 + "scws/1300000/mnf.m3u8";    //å››å·å«è§†;
+ftss[24] =cfts5 + "hddfws/4000000/mnf.m3u8";  //ä¸œæ–¹å«è§†
+ftss[25] =cfts5 + "hbwshd/4000000/mnf.m3u8";  //æ¹–åŒ—å«è§†
+ftss[26] =cfts5 + "jswshd/4000000/mnf.m3u8";  //æ±Ÿè‹å«è§†
+ftss[27] =cfts5 + "tjwshd/4000000/mnf.m3u8";  //å¤©æ´¥å«è§†
+ftss[28] =cfts5 + "gzws/1300000/mnf.m3u8";    //è´µå·žå«è§†
+ftss[29] =cfts5 + "jlws/1300000/mnf.m3u8";    //å‰æž—å«è§†
+ftss[30] =cfts5 + "sdwshd/4000000/mnf.m3u8";  //å±±ä¸œå«è§†
+ftss[31] =cfts5 + "hnwshd/4000000/mnf.m3u8";  //æ¹–å—å«è§†
+ftss[32] =cfts5 + "btws/1300000/mnf.m3u8";    //å…µå›¢å«è§†
+ftss[33] =cfts5 + "lnwshd/4000000/mnf.m3u8";  //è¾½å®å«è§†
+ftss[34] =cfts5 + "hljwshd/4000000/mnf.m3u8"; //é»‘é¾™æ±Ÿå«è§†
+ftss[35] =cfts5 + "qjshd/4000000/mnf.m3u8";//å…¨çºªå®ž
+ftss[36] =cfts5 + "ahwshd/4000000/mnf.m3u8";  //å®‰å¾½å«è§†
+ftss[37] =cfts5 + "szwshd/4000000/mnf.m3u8";//æ·±åœ³å«è§†
+ftss[38] =cfts5 + "dnwshd/4000000/mnf.m3u8";//ä¸œå—å«è§†
+ftss[39] =cfts5 + "ynws/1300000/mnf.m3u8";//äº‘å—å«è§†
+ftss[40] =cfts5 + "qhws/1300000/mnf.m3u8";//é’æµ·å«è§†
+ftss[41] =cfts5 + "hbws/1300000/mnf.m3u8";//æ²³åŒ—å«è§†
+ftss[42] =cfts5 + "hnws/1300000/mnf.m3u8";//æ²³å—å«è§†
+ftss[43] =cfts5 + "sxws/1300000/mnf.m3u8";//é™•è¥¿å«è§†
+ftss[44] ="http://live.zohi.tv/video/s10001-FZTV-1/index.m3u8";//ç¦å·žç»¼åˆ
+ftss[45] ="http://live.zohi.tv/video/s10001-yspd-2/index.m3u8";//ç¦å·žå½±è§†
+ftss[46] ="http://live.zohi.tv/video/s10001-shpd-3/index.m3u8";//ç¦å·žç”Ÿæ´»
 
-ftss[47] ="http://hw-m-l.cztv.com/channels/lantian/channel01/1080p.m3u8";//Õã½­ÎÀÊÓ
-ftss[48] ="http://hw-m-l.cztv.com/channels/lantian/channel02/1080p.m3u8";//Ç®½­ÎÀÊÓ
-ftss[49] ="http://hw-m-l.cztv.com/channels/lantian/channel03/1080p.m3u8";//Õã½­¾­¼Ã
-ftss[50] ="http://hw-m-l.cztv.com/channels/lantian/channel04/1080p.m3u8";//Õã½­¿Æ½Ì
-ftss[51] ="http://hw-m-l.cztv.com/channels/lantian/channel051080p.m3u8"; //Õã½­Ó°ÊÓ
-ftss[52] ="http://223.244.92.30:808/2774goN/1000/live.m3u8";//ºÏ·ÊÐÂÎÅ
-ftss[53] ="http://223.244.92.30:808/xcd72q7/1000/live.m3u8";//ºÏ·ÊÉú»î
-ftss[54] ="http://223.244.92.30:808/x91Hoz8/1000/live.m3u8";//ºÏ·Ê·¨ÖÆ
-ftss[55] ="http://223.244.92.30:808/52e58Sh/1000/live.m3u8";//ºÏ·ÊÎÄÌå
-ftss[56] ="http://live1.wuhubtv.com/channel1/sd/live.m3u8";//ÎßºþÐÂÎÅ
-ftss[57] ="http://live1.wuhubtv.com/channel2/sd/live.m3u8";//ÎßºþÉú»î
-ftss[58] ="http://live1.wuhubtv.com/channel3/sd/live.m3u8";//Îßºþ¹«¹²
-ftss[59] ="http://live1.wuhubtv.com/channel4/sd/live.m3u8";//Îßºþ½ÌÓý
-ftss[60] ="http://live.china-latv.com/channel1/sd/live.m3u8";//Áù°²ÐÂÎÅ
-ftss[61] ="http://live.china-latv.com/channel2/sd/live.m3u8";//Áù°²¹«¹²
-ftss[62] ="http://stream.ycgbtv.com.cn/ycxw/sd/live.m3u8";//Òø´¨Éú»î
-ftss[63] ="http://stream.ycgbtv.com.cn/ycgg/sd/live.m3u8";//Òø´¨¹«¹²
-ftss[64] ="http://stream1.huaihai.tv/xwzh/playlist.m3u8";//ÐìÖÝÐÂÎÅ
-ftss[65] ="http://stream1.huaihai.tv/jjsh/playlist.m3u8";//ÐìÖÝ¾­¼Ã
-ftss[66] ="http://stream1.huaihai.tv/wyys/playlist.m3u8";//ÐìÖÝÓ°ÊÓ
-ftss[67] ="http://stream1.huaihai.tv/ggpd/playlist.m3u8";//ÐìÖÝ¹«¹²
-ftss[68] ="http://live.btgdt.com/channels/btgd/xwzh/m3u8:500k/live";//°üÍ·ÐÂÎÅ
-ftss[69] ="http://live.btgdt.com/channels/btgd/shfw/m3u8:500k/live";//°üÍ·Éú»î
-ftss[70] ="http://live.btgdt.com/channels/btgd/jjpd/m3u8:500k/live";//°üÍ·¾­¼Ã
-ftss[71] ="http://live.wifizs.cn/xwzh/sd/live.m3u8";//ÖÛÉ½ÐÂÎÅ
-ftss[72] ="http://live.wifizs.cn/ggsh/sd/live.m3u8";//ÖÛÉ½¹«¹²
-ftss[73] ="http://live.wifizs.cn/qdly/sd/live.m3u8";//ÖÛÉ½ÂÃÓÎ
-ftss[74] ="http://live.ahsz.tv/video/s10001-szzh/index.m3u8";//ËÞÖÝ×ÛºÏ
-ftss[75] ="http://live.ahsz.tv/video/s10001-ggpd/index.m3u8";//ËÞÖÝ¹«¹²
-ftss[76] ="http://live.ahsz.tv/video/s10001-kxjy/index.m3u8";//ËÞÖÝ¿Æ½Ì
-ftss[77] ="http://hls.hsrtv.cn/hls/hstv2.m3u8";//ºâË®¹«¹²
-ftss[78] ="http://hls.hsrtv.cn/hls/hstv1.m3u8";//ºâË®ÐÂÎÅ
-ftss[79] ="http://hls.hsrtv.cn/hls/hstv3.m3u8";//ºâË®Ó°ÊÓ
-ftss[80] ="http://pili-live-hls.hebitv.com/hebi/hebi.m3u8";//º×±Ú×ÛºÏ
-ftss[81] ="http://3gvod.zjgonline.com.cn:1935/live/xinwenzonghe2/playlist.m3u8";//ÕÅ¼Ò¸ÛÐÂÎÅ
-ftss[82] ="http://stream.hhek.cn/xwzh/sd/live.m3u8";//¶«Óª×ÛºÏ
-ftss[83] ="http://stream.hhek.cn/dyjy/sd/live.m3u8";//¶«Óª¿Æ½Ì
-ftss[84] ="http://stream.hhek.cn/ggpd/sd/live.m3u8";//¶«Óª¹«¹²
-ftss[85] ="http://stream2.xiancity.cn/xatv1/sd/live.m3u8";//Î÷°²ÐÂÎÅ
-ftss[86] ="http://stream2.xiancity.cn/xatv2/sd/live.m3u8";//Î÷°²°×¸ë
-ftss[87] ="http://stream2.xiancity.cn/xatv3/sd/live.m3u8";//Î÷°²×ÊÑ¶
-ftss[88] ="http://stream2.xiancity.cn/xatv4/sd/live.m3u8";//Î÷°²Ó°ÊÓ
-ftss[89] ="http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8";//ÓàÒ¦ÐÂÎÅ
-ftss[90] ="http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8";//ÓàÒ¦ÎÄ»¯
-ftss[91] ="http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8";//ÓàÒ¦Éú»î
-ftss[92] ="http://l.cztvcloud.com/channels/lantian/SXxiaoshan1/720p.m3u8";//ÏôÉ½ÐÂÎÅ
-ftss[93] ="http://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8";//ÏôÉ½Éú»î
-ftss[94] ="http://l.cztvcloud.com/channels/lantian/SXshangyu1/720p.m3u8";//ÉÏÓÝÐÂÎÅ
-ftss[95] ="http://l.cztvcloud.com/channels/lantian/SXshangyu2/720p.m3u8";//ÉÏÓÝ¾­¼Ã
-ftss[96] ="http://l.cztvcloud.com/channels/lantian/SXxinchang1/720p.m3u8";//ÐÂ²ýÐÂÎÅ
-ftss[97] ="http://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8";//ÐÂ²ýÓ°ÊÓ
-ftss[98] ="http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8";//áÓÖÝÐÂÎÅ
-ftss[99] ="http://live.lyg1.com/zhpd/sd/live.m3u8";//Á¬ÔÆ¸Û×ÛºÏ
-ftss[100]="http://live.lyg1.com/ggpd/sd/live.m3u8";//Á¬ÔÆ¸Û¹«¹²
-ftss[101] ="http://livealone302.iqilu.com/iqilu/yspd.m3u8";//É½¶«Ó°ÊÓ
-ftss[102] ="http://livealone302.iqilu.com/iqilu/zypd.m3u8";//É½¶«×ÛÒÕ
-ftss[103] ="http://livealone302.iqilu.com/iqilu/shpd.m3u8";//É½¶«Éú»î
-ftss[104] ="http://livealone302.iqilu.com/iqilu/ggpd.m3u8";//É½¶«¹«¹²
-ftss[105] ="http://livealone302.iqilu.com/iqilu/nkpd.m3u8";//É½¶«Å©¿Æ
-ftss[106] ="http://livealone302.iqilu.com/iqilu/typd.m3u8";//É½¶«ÌåÓý
-ftss[107] ="http://livealone302.iqilu.com/iqilu/qlpd.m3u8";//É½¶«ÆëÂ³
-ftss[108] ="http://cm.wshls.homecdn.com/live/7cc9.m3u8";//ÄÏÍ¨ÐÂÎÅ
-ftss[109] ="http://cm.wshls.homecdn.com/live/7cc7.m3u8";//ÄÏÍ¨2
-ftss[110] ="http://cm.wshls.homecdn.com/live/7cc5.m3u8";//ÄÏÍ¨¹«¹²
-ftss[111] ="http://cm.wshls.homecdn.com/live/7cc1.m3u8";//³ç´¨TV
-ftss[112] ="http://cm.wshls.homecdn.com/live/139a3.m3u8";//XnÐÂÎÅ
-ftss[113] ="http://scgctvshow.sctv.com/hdlive/sctv2/1.m3u8";//ËÄ´¨¾­¼Ã
-ftss[114] ="http://scgctvshow.sctv.com/hdlive/sctv3/1.m3u8";//ËÄ´¨ÎÄ»¯
-ftss[115] ="http://scgctvshow.sctv.com/hdlive/sctv4/1.m3u8";//ËÄ´¨ÐÂÎÅ
-ftss[116] ="http://scgctvshow.sctv.com/hdlive/sctv5/1.m3u8";//ËÄ´¨Ó°ÊÓ
-ftss[117] ="http://scgctvshow.sctv.com/hdlive/sctv7/1.m3u8";//ËÄ´¨7
-ftss[118] ="http://scgctvshow.sctv.com/hdlive/sctv9/1.m3u8";//ËÄ´¨Ïç´å
-ftss[119] ="http://wshls.live.migucloud.com/live/01YCQY7M_C0/playlist.m3u8";//À¥Ã÷¾­¼Ã
-ftss[120] ="http://wshls.live.migucloud.com/live/ZBXWIMTD_C0/playlist.m3u8";//À¥Ã÷¿ÆÑ§
-ftss[121] ="http://wshls.live.migucloud.com/live/6KN3ZB2S_C0/playlist.m3u8";//À¥Ã÷ÓéÀÖ
-ftss[122] ="http://wshls.live.migucloud.com/live/KYLNJWFD_C0/playlist.m3u8";//À¥Ã÷Ó°ÊÓ
-ftss[123] ="http://wshls.live.migucloud.com/live/UD0YLY2G_C0/playlist.m3u8";//À¥Ã÷¹«¹²
-ftss[124] ="http://live2.plus.hebtv.com/jjshx/hd/live.m3u8";//ºÓ±±¾­¼Ã
-ftss[125] ="http://live3.plus.hebtv.com/hbdsx/hd/live.m3u8";//ºÓ±±¶¼ÊÐ
-ftss[126] ="http://live4.plus.hebtv.com/hbysx/hd/live.m3u8";//ºÓ±±Ó°ÊÓ
-ftss[127] ="http://live7.plus.hebtv.com/hbggx/hd/live.m3u8";//ºÓ±±¹«¹²
-ftss[128] ="http://live3.plus.hebtv.com/nmpdx/hd/live.m3u8";//ºÓ±±Å©Ãñ
+ftss[47] ="http://hw-m-l.cztv.com/channels/lantian/channel01/1080p.m3u8";//æµ™æ±Ÿå«è§†
+ftss[48] ="http://hw-m-l.cztv.com/channels/lantian/channel02/1080p.m3u8";//é’±æ±Ÿå«è§†
+ftss[49] ="http://hw-m-l.cztv.com/channels/lantian/channel03/1080p.m3u8";//æµ™æ±Ÿç»æµŽ
+ftss[50] ="http://hw-m-l.cztv.com/channels/lantian/channel04/1080p.m3u8";//æµ™æ±Ÿç§‘æ•™
+ftss[51] ="http://hw-m-l.cztv.com/channels/lantian/channel051080p.m3u8"; //æµ™æ±Ÿå½±è§†
+ftss[52] ="http://223.244.92.30:808/2774goN/1000/live.m3u8";//åˆè‚¥æ–°é—»
+ftss[53] ="http://223.244.92.30:808/xcd72q7/1000/live.m3u8";//åˆè‚¥ç”Ÿæ´»
+ftss[54] ="http://223.244.92.30:808/x91Hoz8/1000/live.m3u8";//åˆè‚¥æ³•åˆ¶
+ftss[55] ="http://223.244.92.30:808/52e58Sh/1000/live.m3u8";//åˆè‚¥æ–‡ä½“
+ftss[56] ="http://live1.wuhubtv.com/channel1/sd/live.m3u8";//èŠœæ¹–æ–°é—»
+ftss[57] ="http://live1.wuhubtv.com/channel2/sd/live.m3u8";//èŠœæ¹–ç”Ÿæ´»
+ftss[58] ="http://live1.wuhubtv.com/channel3/sd/live.m3u8";//èŠœæ¹–å…¬å…±
+ftss[59] ="http://live1.wuhubtv.com/channel4/sd/live.m3u8";//èŠœæ¹–æ•™è‚²
+ftss[60] ="http://live.china-latv.com/channel1/sd/live.m3u8";//å…­å®‰æ–°é—»
+ftss[61] ="http://live.china-latv.com/channel2/sd/live.m3u8";//å…­å®‰å…¬å…±
+ftss[62] ="http://stream.ycgbtv.com.cn/ycxw/sd/live.m3u8";//é“¶å·ç”Ÿæ´»
+ftss[63] ="http://stream.ycgbtv.com.cn/ycgg/sd/live.m3u8";//é“¶å·å…¬å…±
+ftss[64] ="http://stream1.huaihai.tv/xwzh/playlist.m3u8";//å¾å·žæ–°é—»
+ftss[65] ="http://stream1.huaihai.tv/jjsh/playlist.m3u8";//å¾å·žç»æµŽ
+ftss[66] ="http://stream1.huaihai.tv/wyys/playlist.m3u8";//å¾å·žå½±è§†
+ftss[67] ="http://stream1.huaihai.tv/ggpd/playlist.m3u8";//å¾å·žå…¬å…±
+ftss[68] ="http://live.btgdt.com/channels/btgd/xwzh/m3u8:500k/live";//åŒ…å¤´æ–°é—»
+ftss[69] ="http://live.btgdt.com/channels/btgd/shfw/m3u8:500k/live";//åŒ…å¤´ç”Ÿæ´»
+ftss[70] ="http://live.btgdt.com/channels/btgd/jjpd/m3u8:500k/live";//åŒ…å¤´ç»æµŽ
+ftss[71] ="http://live.wifizs.cn/xwzh/sd/live.m3u8";//èˆŸå±±æ–°é—»
+ftss[72] ="http://live.wifizs.cn/ggsh/sd/live.m3u8";//èˆŸå±±å…¬å…±
+ftss[73] ="http://live.wifizs.cn/qdly/sd/live.m3u8";//èˆŸå±±æ—…æ¸¸
+ftss[74] ="http://live.ahsz.tv/video/s10001-szzh/index.m3u8";//å®¿å·žç»¼åˆ
+ftss[75] ="http://live.ahsz.tv/video/s10001-ggpd/index.m3u8";//å®¿å·žå…¬å…±
+ftss[76] ="http://live.ahsz.tv/video/s10001-kxjy/index.m3u8";//å®¿å·žç§‘æ•™
+ftss[77] ="http://hls.hsrtv.cn/hls/hstv2.m3u8";//è¡¡æ°´å…¬å…±
+ftss[78] ="http://hls.hsrtv.cn/hls/hstv1.m3u8";//è¡¡æ°´æ–°é—»
+ftss[79] ="http://hls.hsrtv.cn/hls/hstv3.m3u8";//è¡¡æ°´å½±è§†
+ftss[80] ="http://pili-live-hls.hebitv.com/hebi/hebi.m3u8";//é¹¤å£ç»¼åˆ
+ftss[81] ="http://3gvod.zjgonline.com.cn:1935/live/xinwenzonghe2/playlist.m3u8";//å¼ å®¶æ¸¯æ–°é—»
+ftss[82] ="http://stream.hhek.cn/xwzh/sd/live.m3u8";//ä¸œè¥ç»¼åˆ
+ftss[83] ="http://stream.hhek.cn/dyjy/sd/live.m3u8";//ä¸œè¥ç§‘æ•™
+ftss[84] ="http://stream.hhek.cn/ggpd/sd/live.m3u8";//ä¸œè¥å…¬å…±
+ftss[85] ="http://stream2.xiancity.cn/xatv1/sd/live.m3u8";//è¥¿å®‰æ–°é—»
+ftss[86] ="http://stream2.xiancity.cn/xatv2/sd/live.m3u8";//è¥¿å®‰ç™½é¸½
+ftss[87] ="http://stream2.xiancity.cn/xatv3/sd/live.m3u8";//è¥¿å®‰èµ„è®¯
+ftss[88] ="http://stream2.xiancity.cn/xatv4/sd/live.m3u8";//è¥¿å®‰å½±è§†
+ftss[89] ="http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8";//ä½™å§šæ–°é—»
+ftss[90] ="http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8";//ä½™å§šæ–‡åŒ–
+ftss[91] ="http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8";//ä½™å§šç”Ÿæ´»
+ftss[92] ="http://l.cztvcloud.com/channels/lantian/SXxiaoshan1/720p.m3u8";//è§å±±æ–°é—»
+ftss[93] ="http://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8";//è§å±±ç”Ÿæ´»
+ftss[94] ="http://l.cztvcloud.com/channels/lantian/SXshangyu1/720p.m3u8";//ä¸Šè™žæ–°é—»
+ftss[95] ="http://l.cztvcloud.com/channels/lantian/SXshangyu2/720p.m3u8";//ä¸Šè™žç»æµŽ
+ftss[96] ="http://l.cztvcloud.com/channels/lantian/SXxinchang1/720p.m3u8";//æ–°æ˜Œæ–°é—»
+ftss[97] ="http://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8";//æ–°æ˜Œå½±è§†
+ftss[98] ="http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8";//åµŠå·žæ–°é—»
+ftss[99] ="http://live.lyg1.com/zhpd/sd/live.m3u8";//è¿žäº‘æ¸¯ç»¼åˆ
+ftss[100]="http://live.lyg1.com/ggpd/sd/live.m3u8";//è¿žäº‘æ¸¯å…¬å…±
+ftss[101] ="http://livealone302.iqilu.com/iqilu/yspd.m3u8";//å±±ä¸œå½±è§†
+ftss[102] ="http://livealone302.iqilu.com/iqilu/zypd.m3u8";//å±±ä¸œç»¼è‰º
+ftss[103] ="http://livealone302.iqilu.com/iqilu/shpd.m3u8";//å±±ä¸œç”Ÿæ´»
+ftss[104] ="http://livealone302.iqilu.com/iqilu/ggpd.m3u8";//å±±ä¸œå…¬å…±
+ftss[105] ="http://livealone302.iqilu.com/iqilu/nkpd.m3u8";//å±±ä¸œå†œç§‘
+ftss[106] ="http://livealone302.iqilu.com/iqilu/typd.m3u8";//å±±ä¸œä½“è‚²
+ftss[107] ="http://livealone302.iqilu.com/iqilu/qlpd.m3u8";//å±±ä¸œé½é²
+ftss[108] ="http://cm.wshls.homecdn.com/live/7cc9.m3u8";//å—é€šæ–°é—»
+ftss[109] ="http://cm.wshls.homecdn.com/live/7cc7.m3u8";//å—é€š2
+ftss[110] ="http://cm.wshls.homecdn.com/live/7cc5.m3u8";//å—é€šå…¬å…±
+ftss[111] ="http://cm.wshls.homecdn.com/live/7cc1.m3u8";//å´‡å·TV
+ftss[112] ="http://cm.wshls.homecdn.com/live/139a3.m3u8";//Xnæ–°é—»
+ftss[113] ="http://scgctvshow.sctv.com/hdlive/sctv2/1.m3u8";//å››å·ç»æµŽ
+ftss[114] ="http://scgctvshow.sctv.com/hdlive/sctv3/1.m3u8";//å››å·æ–‡åŒ–
+ftss[115] ="http://scgctvshow.sctv.com/hdlive/sctv4/1.m3u8";//å››å·æ–°é—»
+ftss[116] ="http://scgctvshow.sctv.com/hdlive/sctv5/1.m3u8";//å››å·å½±è§†
+ftss[117] ="http://scgctvshow.sctv.com/hdlive/sctv7/1.m3u8";//å››å·7
+ftss[118] ="http://scgctvshow.sctv.com/hdlive/sctv9/1.m3u8";//å››å·ä¹¡æ‘
+ftss[119] ="http://wshls.live.migucloud.com/live/01YCQY7M_C0/playlist.m3u8";//æ˜†æ˜Žç»æµŽ
+ftss[120] ="http://wshls.live.migucloud.com/live/ZBXWIMTD_C0/playlist.m3u8";//æ˜†æ˜Žç§‘å­¦
+ftss[121] ="http://wshls.live.migucloud.com/live/6KN3ZB2S_C0/playlist.m3u8";//æ˜†æ˜Žå¨±ä¹
+ftss[122] ="http://wshls.live.migucloud.com/live/KYLNJWFD_C0/playlist.m3u8";//æ˜†æ˜Žå½±è§†
+ftss[123] ="http://wshls.live.migucloud.com/live/UD0YLY2G_C0/playlist.m3u8";//æ˜†æ˜Žå…¬å…±
+ftss[124] ="http://live2.plus.hebtv.com/jjshx/hd/live.m3u8";//æ²³åŒ—ç»æµŽ
+ftss[125] ="http://live3.plus.hebtv.com/hbdsx/hd/live.m3u8";//æ²³åŒ—éƒ½å¸‚
+ftss[126] ="http://live4.plus.hebtv.com/hbysx/hd/live.m3u8";//æ²³åŒ—å½±è§†
+ftss[127] ="http://live7.plus.hebtv.com/hbggx/hd/live.m3u8";//æ²³åŒ—å…¬å…±
+ftss[128] ="http://live3.plus.hebtv.com/nmpdx/hd/live.m3u8";//æ²³åŒ—å†œæ°‘
 
      if( fdss=="0" || fdss=="jspd") fkds = ftss[0];
 else if( fdss=="1" || fdss=="cctv1") fkds = ftss[1];
@@ -749,10 +749,10 @@ else if( fdss=="48"|| fdss=="qjws"|| fdss=="qianjiang")  fkds = ftss[49];
 else if( fdss=="49"|| fdss=="zjjj"|| fdss=="zhejiang1")  fkds = ftss[49];
 else if( fdss=="50"|| fdss=="zjkj"|| fdss=="zhejiang2")  fkds = ftss[50];
 else if( fdss=="51"|| fdss=="zjys"|| fdss=="zhejiang3")  fkds = ftss[51];
-else if( fdss=="52"|| fdss=="hfxw"|| fdss=="hefei1") fkds = ftss[52];//ºÏ·ÊÐÂÎÅ
-else if( fdss=="53"|| fdss=="hfsh"|| fdss=="hefei2") fkds = ftss[53];//ºÏ·ÊÉú»î
-else if( fdss=="54"|| fdss=="hffz"|| fdss=="hefei3") fkds = ftss[54];//ºÏ·Ê·¨ÖÆ
-else if( fdss=="55"|| fdss=="hfwt"|| fdss=="hefei4") fkds = ftss[55];//ºÏ·ÊÎÄÌå
+else if( fdss=="52"|| fdss=="hfxw"|| fdss=="hefei1") fkds = ftss[52];//åˆè‚¥æ–°é—»
+else if( fdss=="53"|| fdss=="hfsh"|| fdss=="hefei2") fkds = ftss[53];//åˆè‚¥ç”Ÿæ´»
+else if( fdss=="54"|| fdss=="hffz"|| fdss=="hefei3") fkds = ftss[54];//åˆè‚¥æ³•åˆ¶
+else if( fdss=="55"|| fdss=="hfwt"|| fdss=="hefei4") fkds = ftss[55];//åˆè‚¥æ–‡ä½“
 else if( fdss=="52"|| fdss=="njxw"|| fdss=="nanjin1")   fkds = ftss[52];
 else if( fdss=="53"|| fdss=="njkj"|| fdss=="nanjin2")   fkds = ftss[53];
 else if( fdss=="54"|| fdss=="njsh"|| fdss=="nanjin3")   fkds = ftss[54];
@@ -809,27 +809,27 @@ else if(fdss=="104"|| fdss=="sdgg"||fdss=="sandong4") fkds = ftss[104];
 else if(fdss=="105"|| fdss=="sdnk"||fdss=="sandong5") fkds = ftss[105];
 else if(fdss=="106"|| fdss=="sdty"||fdss=="sandong6") fkds = ftss[106];
 else if(fdss=="107"|| fdss=="sdql"||fdss=="sandong7") fkds = ftss[107];
-else if(fdss=="108"|| fdss=="ntxw"||fdss=="nantong1") fkds = ftss[108];//ÄÏÍ¨ÐÂÎÅ
-else if(fdss=="109"|| fdss=="ntsj"||fdss=="nantong2") fkds = ftss[109];//ÄÏÍ¨2
-else if(fdss=="110"|| fdss=="ntgg"||fdss=="nantong3") fkds = ftss[110];//ÄÏÍ¨¹«¹²
-else if(fdss=="111"|| fdss=="ntcc"||fdss=="nantong4") fkds = ftss[111];//³ç´¨TV
-else if(fdss=="112"|| fdss=="ntxn"||fdss=="nantong5") fkds = ftss[112];//XnÐÂÎÅ
-else if(fdss=="113"|| fdss=="scjj"||fdss=="sicuan1") fkds =ftss[113];//ËÄ´¨¾­¼Ã
-else if(fdss=="114"|| fdss=="scwh"||fdss=="sicuan2") fkds =ftss[114];//ËÄ´¨ÎÄ»¯
-else if(fdss=="115"|| fdss=="sxxw"||fdss=="sicuan3") fkds =ftss[115];//ËÄ´¨ÐÂÎÅ
-else if(fdss=="116"|| fdss=="scys"||fdss=="sicuan4") fkds =ftss[116];//ËÄ´¨Ó°ÊÓ
-else if(fdss=="117"|| fdss=="sc7"||fdss=="sicuan5") fkds =ftss[117];//ËÄ´¨7
-else if(fdss=="118"|| fdss=="scxc"||fdss=="sicuan5") fkds =ftss[118];//ËÄ´¨Ïç´å
-else if(fdss=="119"|| fdss=="kmjj"||fdss=="kunming1") fkds =ftss[119];//À¥Ã÷¾­¼Ã
-else if(fdss=="120"|| fdss=="kmkx"||fdss=="kunming2") fkds =ftss[120];//À¥Ã÷¿ÆÑ§
-else if(fdss=="121"|| fdss=="kmly"||fdss=="kunming3") fkds =ftss[121];//À¥Ã÷ÓéÀÖ
-else if(fdss=="122"|| fdss=="kmys"||fdss=="kunming4") fkds =ftss[122];//À¥Ã÷Ó°ÊÓ
-else if(fdss=="123"|| fdss=="kmgg"||fdss=="kunming5") fkds =ftss[123];//À¥Ã÷¹«¹²
-else if(fdss=="124"|| fdss=="hbjj"||fdss=="hebei1") fkds =ftss[124];//ºÓ±±¾­¼Ã
-else if(fdss=="125"|| fdss=="hbjj"||fdss=="hebei2") fkds =ftss[125];//ºÓ±±¶¼ÊÐ
-else if(fdss=="126"|| fdss=="hbjj"||fdss=="hebei3") fkds =ftss[126];//ºÓ±±Ó°ÊÓ
-else if(fdss=="127"|| fdss=="hbjj"||fdss=="hebei4") fkds =ftss[127];//ºÓ±±¹«¹²
-else if(fdss=="128"|| fdss=="hbjj"||fdss=="hebei5") fkds =ftss[128];//ºÓ±±Å©Ãñ
+else if(fdss=="108"|| fdss=="ntxw"||fdss=="nantong1") fkds = ftss[108];//å—é€šæ–°é—»
+else if(fdss=="109"|| fdss=="ntsj"||fdss=="nantong2") fkds = ftss[109];//å—é€š2
+else if(fdss=="110"|| fdss=="ntgg"||fdss=="nantong3") fkds = ftss[110];//å—é€šå…¬å…±
+else if(fdss=="111"|| fdss=="ntcc"||fdss=="nantong4") fkds = ftss[111];//å´‡å·TV
+else if(fdss=="112"|| fdss=="ntxn"||fdss=="nantong5") fkds = ftss[112];//Xnæ–°é—»
+else if(fdss=="113"|| fdss=="scjj"||fdss=="sicuan1") fkds =ftss[113];//å››å·ç»æµŽ
+else if(fdss=="114"|| fdss=="scwh"||fdss=="sicuan2") fkds =ftss[114];//å››å·æ–‡åŒ–
+else if(fdss=="115"|| fdss=="sxxw"||fdss=="sicuan3") fkds =ftss[115];//å››å·æ–°é—»
+else if(fdss=="116"|| fdss=="scys"||fdss=="sicuan4") fkds =ftss[116];//å››å·å½±è§†
+else if(fdss=="117"|| fdss=="sc7"||fdss=="sicuan5") fkds =ftss[117];//å››å·7
+else if(fdss=="118"|| fdss=="scxc"||fdss=="sicuan5") fkds =ftss[118];//å››å·ä¹¡æ‘
+else if(fdss=="119"|| fdss=="kmjj"||fdss=="kunming1") fkds =ftss[119];//æ˜†æ˜Žç»æµŽ
+else if(fdss=="120"|| fdss=="kmkx"||fdss=="kunming2") fkds =ftss[120];//æ˜†æ˜Žç§‘å­¦
+else if(fdss=="121"|| fdss=="kmly"||fdss=="kunming3") fkds =ftss[121];//æ˜†æ˜Žå¨±ä¹
+else if(fdss=="122"|| fdss=="kmys"||fdss=="kunming4") fkds =ftss[122];//æ˜†æ˜Žå½±è§†
+else if(fdss=="123"|| fdss=="kmgg"||fdss=="kunming5") fkds =ftss[123];//æ˜†æ˜Žå…¬å…±
+else if(fdss=="124"|| fdss=="hbjj"||fdss=="hebei1") fkds =ftss[124];//æ²³åŒ—ç»æµŽ
+else if(fdss=="125"|| fdss=="hbjj"||fdss=="hebei2") fkds =ftss[125];//æ²³åŒ—éƒ½å¸‚
+else if(fdss=="126"|| fdss=="hbjj"||fdss=="hebei3") fkds =ftss[126];//æ²³åŒ—å½±è§†
+else if(fdss=="127"|| fdss=="hbjj"||fdss=="hebei4") fkds =ftss[127];//æ²³åŒ—å…¬å…±
+else if(fdss=="128"|| fdss=="hbjj"||fdss=="hebei5") fkds =ftss[128];//æ²³åŒ—å†œæ°‘
 else fkds = ftss[13];
 }else fkds = fkds;
 return fkds;
@@ -1047,7 +1047,7 @@ return swfd;
 /*response.setDateHeader("Expires", 0);      
 response.setHeader("Cache-Control", "no-store");      
 response.setHeader("Pragma", "no-store");
-function click(){¡¡if(event.button!==1){¡¡alert( '¸çÃÇ£¬ÊÖÏÂÁôÇé !!'); ¡¡} } 
+function click(){ã€€if(event.button!==1){ã€€alert( 'å“¥ä»¬ï¼Œæ‰‹ä¸‹ç•™æƒ… !!'); ã€€} } 
 document.onmousedown=click
 */
 var murl=new Array()
