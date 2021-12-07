@@ -6,13 +6,18 @@
 function getId( s ) { var re = new RegExp( s + "=([^\&]*)"); re.exec(document.location.href); return RegExp.$1;}  
 function height(){  var height=document.documentElement.clientHeight; return height; }
 var flss = getId('url')?getId('url'):getId('f')?getId('f'):"http://live.xinhuashixun.com/live/chn01/desc.m3u8";
-var src0 = 'https://lecurl.cn/?url=' + flss;
+var src0 = 'https://www.playm3u8.cn/jiexi.php?url=' + flss();
+var src1 = 'http://www.pangujiexi.com/jiexi/?url=' + flss();
+var src2 = 'https://123.1dior.cn/?url=' + flss();
+var src3 = 'https://player.maqq.cn/?url=' + flss();
+var src4 = 'https://jx.yswy.top/?url=' + flss();
+var src5 = 'https://parse.123mingren.com/?url=' + flss();
 </script>
 </head>
 <body style="overflow-y:hidden;height:100%;">
 <div align="center">
 <script>
-document.write('<iframe src = " '+ src0 + '"  id="WANG"  width="100%" height="' + height() +'" frameborder="0" scrolling="yes"></iframe>');
+document.write('<iframe src = " '+ src1 + '"  id="WANG"  width="100%" height="' + height() +'" frameborder="0" scrolling="yes"></iframe>');
 window.focus();
 </script>
 </div>
