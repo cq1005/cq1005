@@ -1,4 +1,3 @@
-var isPad = navigator.userAgent.match(/iPhone|Linux|Android|iPad|iPod|ios|iOS|Windows Phone|Phone|WebOS/i) != null;
 document.writeln("<!-- Start topbar -->");
 document.writeln("<div class=\"topbar\" style=\"postion:absolute;border-style:none;z-index:9999\">");
 document.writeln("<div class=\"content\" style=\"postion:absolute;border-style:none;z-index:9999\">");
