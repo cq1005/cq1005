@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC >
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+<title>Jw</title>
+<style type="text/css">
+    body,html,.wplayer{background-color:#000;padding: 0;margin: 0;width:100%;height:100%;frameborder:0;border:0;}
+</style>
+</head>
+<body style="margin:0px auto auto 0px; height:100%;">
+<script type="text/javascript" src="https://ssl3.200877926.top/jwplayer/jwplayer.js"></script>
+<script type="text/javascript" src="../js/put.js"></script>
+<script type="text/javascript">jwplayer.key="";//fH3TTZCoJ8QdabrM+YC4Z48U3cnd8yDaPkaN0+XIAQo= //</script>
+<div id="wplayer" style="height:100%;"></div>
+<script type="text/javascript">
+if(fkss()!==null) urls=fkss();else urls=fnss;
+    var isMobile = /android|phone|mobi|ipad|ipod|blackberry|symbian|midp|ios/i.test(navigator.userAgent.toLowerCase());
+    var uf = location.href.split('.htm?f=')[1]
+	function isIE() {if (!!window.ActiveXObject || "ActiveXObject" in window) { return true; }else{return false;}}
+	function showPlayer(a){
+		var u;u=urls?urls:a?a.location:playurl;
+	if(isMobile){
+	  document.getElementById('wplayer').innerHTML  = '<'+'video src="'+u+'" controls="controls" width="100%" height="100%" preload="auto" autoplay'+'></'+'video>';
+		}else{
+	 jwplayer("wplayer").setup({playlist:[{file:u,provider:'https://ssl3.200877926.top/jwplayer/HLSProvider6.swf',type:'mp4'}],
+id:'playerID',bufferlenth:5,file:u,
+flashplayer:'https://ssl3.200877926.top/jwplayer/jwplayer.swf',width:'100%',height:'100%',primary:"flash",autostart:true,hls_live_flushurlcache:isIE()?true:false});
+		}
+	}
+	showPlayer({'location':uf});
+function getId( s ) { var re = new RegExp( s + "=([^\&]*)"); re.exec(document.location.href); return RegExp.$1;}  
+</script>
+</body>
+</html>
