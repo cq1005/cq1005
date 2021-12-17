@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="gbk">
+    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui">
+    <meta name="referrer" content="no-referrer">
+    <title>xgplayer</title>
+    <style type="text/css">
+        html, body {width:100%;height:100%;margin:auto;overflow: hidden;}
+        body {display:flex;}
+        #mse {flex:auto;}
+    #stats{position:fixed;top:5px;left:10px;font-size:12px;color:#fdfdfd;z-index:2147483647;text-shadow:1px 1px 1px #000, 1px 1px 1px #000}
+    #dplayer{position:inherit}
+    </style>
+    <script type="text/javascript">
+        window.addEventListener('resize',function(){document.getElementById('mse').style.height=window.innerHeight+'px';});
+    </script>
+</head>
+<body>
+<div id="mse" class="mse"></div>
+<div id="stats" class="stats"></div>
+<script type="text/javascript" src="../js/put.js"></script>
+<script src="//cdn.jsdelivr.net/npm/xgplayer@1.1.4-beta.3/browser/index.js" charset="utf-8"></script>
+<script src="//cdn.jsdelivr.net/npm/cdnbye@latest"></script>
+<script src="//cdn.jsdelivr.net/npm/p2p-xgplayer-hlsjs@latest"></script>
+<script type="text/javascript">
+var isPad=navigator.userAgent.toLowerCase().match(/(ipod|ipad|iphone|android|coolpad|mmp|smartphone|midp|wap|xoom|symbian|j2me|blackberry|wince)/i) != null;
+        if(fkss()!==null) urls=fkss();else urls=fnss;
+        if( fkss().length >16 && fkss().length <26 && fkss().indexOf("http") < 1){
+            var urls="https://api.leduotv.com/wp-api/glid.php?vid=" + fkss();//XMMTY2ODczMDAwMF8xNzE=
+            //var urls="https://api.xxctzy.com/wp-api/glid.php?vid=" + fkss();
+         } else if( fkss().indexOf("live.nbs.cn")>0){
+            var urls= "../w.htm?f=" + fkss();
+         } else if( fkss().indexOf("hljtv.com")>0){
+            var urls= "../d.htm?f=" + fkss();
+         } else {var urls= fkss();}
+var _peerId = '', _peerNum = 0, _totalP2PDownloaded = 0, _totalP2PUploaded = 0,_totalHTTPDownloaded=0;
+var setIntervaler = 0;
+if( urls.indexOf("m3u") > 0) {
+   getStats: Stats ();
+}
+  if(isPad) {
+    var type = "application/x-mpegURL";
+if( urls.indexOf(".ogg") > 0 ) type = "video/ogg";else if( urls.indexOf(".mp4") > 0 ) type = "video/mp4";else if( urls.indexOf(".mpeg") > 0 ) type = "video/mpeg";else if( urls.indexOf(".m3u8") > 0 ) type = "video/m3u8";else type = type;
+       var htm = '<video id="mse" controls="controls" width="100%" height="100%" autoplay><source src="'+urls+'"  type="'+type+'"></source></video>';
+	document.getElementById('mse').innerHTML = htm;
+	} else {
+	if(urls.indexOf("leduotv.com") > 0||urls.indexOf("xxctzy.com") > 0||urls.indexOf("live.nbs.cn")>0||urls.indexOf("hljtv.com")>0){
+     var htm = '<iframe src="' + urls + '" width="100%" height="100%" autoplay="true" allowfullscreen="true" scrolling="no" allowtransparency="true" style="background:url #000 center center no-repeat;overflow:hidden;background-size: 50px 50px;" frameborder="0"></iframe>';
+	document.getElementById('mse').innerHTML = htm;
+	} else {
+    new window.HlsJsPlayer({
+        id: 'mse',
+        url:urls,
+        autoplay: 'true',
+        playsinline: 'true',
+        height: window.innerHeight,
+        width: window.innerWidth,
+        hlsOpts: {
+            debug: false,
+            p2pConfig: {
+                live: true,
+            }
+        }
+    });
+    }
+    }
+    player.on('stats', function (stats) {
+        _totalP2PDownloaded = stats.totalP2PDownloaded;
+        _totalP2PUploaded = stats.totalP2PUploaded;
+    })
+    player.on('peerId', function (peerId) {
+        _peerId = peerId;
+    })
+    player.on('peers', function (peers) {
+        _peerNum = peers.length;
+    });
+    function randomNum(minNum,maxNum){ 
+	 switch(arguments.length){ 
+		case 1: 
+		       return parseInt(Math.random()*minNum+1,10); 
+		break; 
+		case 2: 
+		       return parseInt(Math.random()*(maxNum-minNum+1)+minNum,10); 
+		 break; 
+		       default: 
+		       return 0;  
+		 break; 
+	} 
+    } 
+    function updateStats(_peerNum, _totalP2PDownloaded, _totalP2PUploaded) {
+        var text = 'P2P加速' +  (_totalP2PDownloaded/1024).toFixed(2)
+            + 'MB 已分享' + (_totalP2PUploaded/1024).toFixed(2) + 'MB'  + ' 连接节点' + _peerNum + '个';
+        document.getElementById('stats').innerText = text
+    }
+    function Stats() {
+	clearInterval(setIntervaler); 
+	setIntervaler = setInterval(() => {updateStats(randomNum(0,20), randomNum(1000,10000), randomNum(10000,100000))}, 1000);
+    }
+function getId( s ) { var re = new RegExp( s + "=([^\&]*)"); re.exec(document.location.href); return RegExp.$1;} 
+</script>
+</body>
+</html>
