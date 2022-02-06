@@ -397,12 +397,26 @@ var cfts1 = "http://cctvksh5ca.v.kcdnvip.com/clive/";
 var cfts2 = "http://cctvksh5ca.v.kcdnvip.com/live/";
 var cfts3 = "http://cctvcnch5ca.v.wscdns.com/live/";
 var cfts4 = "http://cctvtxyh5ca.liveplay.myqcloud.com/live/";
-var cfts5 = "http://112.132.209.46/liveplay-kk.rtxapp.com/live/program/live/";
-var cfts6 = "http://112.132.209.46/keonline.shanghai.liveplay.qq.com/live/program/live/";
+var cfts5 = "http://219.151.31.38/liveplay-kk.rtxapp.com/live/program/live/";
+var cfts6 = "http://180.153.99.176/keonline.shanghai.liveplay.qq.com/live/program/live/";//
 var cfts7 = "http://219.151.31.43/keonline.shanghai.liveplay.qq.com/live/program/live/";
+var cfts10 = "http://223.111.195.58/keonline.shanghai.liveplay.qq.com/live/program/live/";
+var cfts11 = "http://14.152.88.77/keonline.shanghai.liveplay.qq.com/live/program/live/";
+var cfts12 = "http://183.207.255.188/live/program/live/";
+var cfts13 = "http://112.25.48.11/live/program/live/";
+var cfts14 = "http://140.207.241.3:8080/live/program/live/";
 var cfts8 = "http://112.132.209.46/"//125.74.5.39//14.152.88.77
-var fdss = getId('f')?getId('f'):"http://cctvalih5ca.v.myalicdn.com/live/cctv13_2/index.m3u8";
+var cfts9 = "http://shbu.live.bestvcdn.com.cn:8080/live/program/live/";
 var fss = "http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8";//香港
+var mnf1 = "/1300000/mnf.m3u8";
+var mnf2 = "/2300000/mnf.m3u8";
+var mnf3 = "/4000000/mnf.m3u8";
+var ind0 = "/index.m3u8";
+var ind1 = "_1/index.m3u8";
+var ind2 = "_2/index.m3u8";
+var ndss = "_2_hd.m3u8";
+var snd1 = "/playlist.m3u8";
+var fdss = getId('f')?getId('f'):cfts5 + "cctvxw" + mnf1;
   if( fdss==null||fdss=="") ftss =fss;else ftss=fdss;
   if( fdss.length >16 && fdss.length <26 && fdss.indexOf("http") < 0){
  ftss="https://api.leduotv.com/wp-api/glid.php?vid=" + fdss;//XMMTY2ODczMDAwMF8xNzE=
@@ -410,50 +424,50 @@ var fss = "http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8";//香港
 //ftss="https://api.xxctzy.com/wp-api/ifr.php?vid=" + fdss;
 //ftss="https://api.leduotv.com/wp-api/ifr.php?vid=" + fdss;
 } else if( fdss.length <16) {
-  if( fdss=="0"|| fdss=="jspd") ftss =cfts5 + "jspdhd/4000000/mnf.m3u8";//纪实频道;
-else if( fdss=="1"|| fdss=="cctv1") ftss =cfts + "cctv1_2/index.m3u8";//cctv1;
-else if( fdss=="2"|| fdss=="cctv2") ftss =cfts5 + "cctv2/1300000/mnf.m3u8";//cctv2;
-else if( fdss=="3"|| fdss=="cctv3") ftss =cfts5 + "cctv3hd/4000000/mnf.m3u8";//cctv3;
-else if( fdss=="4"|| fdss=="cctv4") ftss =cfts + "cctv4_2/index.m3u8";//cctv4;
-else if( fdss=="5"|| fdss=="cctv5") ftss =cfts + "cctv5_2/index.m3u8";//cctv5;
-else if( fdss=="6"|| fdss=="cctv6") ftss =cfts5 + "cctv6hd/4000000/mnf.m3u8";//cctv6;
-else if( fdss=="7"|| fdss=="cctv7") ftss =cfts4 + "cctv7_2_hd.m3u8";//cctv7;
-else if( fdss=="8"|| fdss=="cctv8") ftss =cfts5 + "cctv8hd/4000000/mnf.m3u8";//cctv8;
-else if( fdss=="9"|| fdss=="cctv9"|| fdss=="jilu") ftss =cfts + "cctvjilu_2/index.m3u8";//cctv9;
-else if(fdss=="10"|| fdss=="cctv10") ftss =cfts + "cctv10_2/index.m3u8";//cctv10;
-else if(fdss=="11"|| fdss=="cctv11") ftss =cfts + "cctv11_2/index.m3u8";//cctv11;
-else if(fdss=="12"|| fdss=="cctv12") ftss =cfts + "cctv12_2/index.m3u8";//cctv12;
-else if(fdss=="13"|| fdss=="cctv13") ftss =cfts + "cctv13_2/index.m3u8";//cctv13;
-else if(fdss=="14"|| fdss=="cctv14"|| fdss=="child") ftss =cfts + "cctvchild_2/index.m3u8";//cctv14;
-else if(fdss=="15"|| fdss=="cctv15") ftss =cfts + "cctv15_2/index.m3u8";//音乐;
-else if(fdss=="16"|| fdss=="btv1"||fdss=="bjws") ftss =cfts5 + "bjws/1300000/mnf.m3u8";//北京卫视;
-else if(fdss=="17"|| fdss=="cctv17") ftss =cfts + "cctv17_2/index.m3u8";//cctv17;
+  if( fdss=="0"|| fdss=="jspd") ftss =cfts5 + "jspdhd" + mnf3;//纪实频道;
+else if( fdss=="1"|| fdss=="cctv1") ftss =cfts5 + "cctv1hd" + mnf2;//cctv1;
+else if( fdss=="2"|| fdss=="cctv2") ftss =cfts5 + "cctv2" + mnf1;//cctv2;
+else if( fdss=="3"|| fdss=="cctv3") ftss =cfts5 + "cctv3hd" + mnf3;//cctv3;
+else if( fdss=="4"|| fdss=="cctv4") ftss =cfts5 + "cctv4" + mnf1;//cctv4;
+else if( fdss=="5"|| fdss=="cctv5") ftss =cfts5 + "cctv5" + mnf1;//cctv5;
+else if( fdss=="6"|| fdss=="cctv6") ftss =cfts5 + "cctv6hd" + mnf3;//cctv6;
+else if( fdss=="7"|| fdss=="cctv7") ftss =cfts5 + "cctv7" + mnf1;//cctv7;
+else if( fdss=="8"|| fdss=="cctv8") ftss =cfts5 + "cctv8hd" + mnf3;//cctv8;
+else if( fdss=="9"|| fdss=="cctv9") ftss =cfts5 + "cctvjl" + mnf1;//cctv9;
+else if(fdss=="10"|| fdss=="cctv10") ftss =cfts5 + "cctv10hd" + mnf3;//cctv10;
+else if(fdss=="11"|| fdss=="cctv11") ftss =cfts5 + "cctv11" + mnf1;//cctv11;
+else if(fdss=="12"|| fdss=="cctv12") ftss =cfts5 + "cctv12" + mnf1;//cctv12;
+else if(fdss=="13"|| fdss=="cctv13") ftss =cfts5 + "cctvxw" + mnf1;//cctv13;
+else if(fdss=="14"|| fdss=="cctv14") ftss =cfts5 + "cctvsehd" + mnf3;//cctv14;
+else if(fdss=="15"|| fdss=="cctv15") ftss =cfts5 + "cctvyy" + mnf1;//音乐;
+else if(fdss=="16"|| fdss=="btv1"||fdss=="bjws") ftss =cfts5 + "bjws" + mnf1;//北京卫视;
+else if(fdss=="17"|| fdss=="cctv17") ftss =cfts5 + "cctv17" + mnf1;//cctv17;
 else if(fdss=="18"|| fdss=="laozuo") ftss ="http://cclive2.aniu.tv/live/anzb.m3u8";//老左;
-else if(fdss=="19"|| fdss=="dycj"|| fdss=="caijing") ftss =cfts5 + "dycjhd/4000000/mnf.m3u8"; //第一财经
-else if(fdss=="20"|| fdss=="qixiang"|| fdss=="tianqi") ftss =cfts5 + "zgqx/1300000/mnf.m3u8"; //气象;
-else if(fdss=="21"|| fdss=="dfys"|| fdss=="dongfang") ftss =cfts5 + "dsjpdhd/4000000/mnf.m3u8";//东方影视
-else if(fdss=="22"|| fdss=="sxws1"||fdss=="shanxi1") ftss =cfts5 + "shanxiws/1300000/mnf.m3u8";//山西卫视;
-else if(fdss=="23"|| fdss=="scws"||fdss=="sicuan") ftss =cfts5 + "scws/1300000/mnf.m3u8";     //四川卫视;
-else if(fdss=="24"|| fdss=="dfws"||fdss=="dongfang") ftss =cfts5 + "hddfws/4000000/mnf.m3u8"; //东方卫视
-else if(fdss=="25"|| fdss=="hbws"|| fdss=="hubei") ftss =cfts5 + "hbwshd/4000000/mnf.m3u8";   //湖北卫视
-else if(fdss=="26"|| fdss=="jsws"|| fdss=="jiangsu") ftss =cfts5 + "jswshd/4000000/mnf.m3u8"; //江苏卫视
-else if(fdss=="27"|| fdss=="tjws"||fdss=="tianjin") ftss =cfts5 + "tjwshd/4000000/mnf.m3u8";  //天津卫视
-else if(fdss=="28"|| fdss=="gzws"||fdss=="guizou") ftss =cfts5 + "gzws/1300000/mnf.m3u8";     //贵州卫视
-else if(fdss=="29"|| fdss=="jlws"||fdss=="jilin") ftss =cfts5 + "btws/1300000/mnf.m3u8";      //吉林卫视
-else if(fdss=="30"|| fdss=="sdws"||fdss=="shandong") ftss =cfts5 + "sdwshd/4000000/mnf.m3u8"; //山东卫视
-else if(fdss=="31"|| fdss=="hnws"||fdss=="hunan") ftss =cfts5 + "hnwshd/4000000/mnf.m3u8";    //湖南卫视
-else if(fdss=="32"|| fdss=="btes"||fdss=="bintuan") ftss =cfts5 + "jlws/1300000/mnf.m3u8";    //兵团卫视
-else if(fdss=="33"|| fdss=="lnws"||fdss=="liaoning") ftss =cfts5 + "lnwshd/4000000/mnf.m3u8"; //辽宁卫视
-else if(fdss=="34"|| fdss=="hljws"||fdss=="heilongjiang") ftss =cfts5 + "hljwshd/4000000/mnf.m3u8"; //黑龙江卫视
-else if(fdss=="35"|| fdss=="qjs" ||fdss=="quanjishi") ftss =cfts5 + "qjshd/4000000/mnf.m3u8";//全纪实
-else if(fdss=="36"|| fdss=="ahws"||fdss=="anhui") ftss =cfts5 + "ahwshd/4000000/mnf.m3u8";    //安徽卫视
-else if(fdss=="37"|| fdss=="szws"||fdss=="senzen") ftss =cfts5 + "szwshd/4000000/mnf.m3u8";//深圳卫视
-else if(fdss=="38"|| fdss=="dnws"||fdss=="dongnan") ftss =cfts5 + "dnwshd/4000000/mnf.m3u8";//东南卫视
-else if(fdss=="39"|| fdss=="ynws"||fdss=="yunnan") ftss =cfts5 + "ynws/1300000/mnf.m3u8";//云南卫视
-else if(fdss=="40"|| fdss=="qhws"||fdss=="qinghai") ftss =cfts5 + "qhws/1300000/mnf.m3u8";//青海卫视
-else if(fdss=="41"|| fdss=="hbws1"||fdss=="hebei1") ftss =cfts5 + "hbws/1300000/mnf.m3u8";//河北卫视
-else if(fdss=="42"|| fdss=="hnws" ||fdss=="henan" ) ftss =cfts5 + "hnws/1300000/mnf.m3u8";//河南卫视
-else if(fdss=="43"|| fdss=="sxws" ||fdss=="sanxi2") ftss =cfts5 + "sxws/1300000/mnf.m3u8";//陕西卫视
+else if(fdss=="19"|| fdss=="dycj"|| fdss=="caijing") ftss =cfts5 + "dycjhd" + mnf3; //第一财经
+else if(fdss=="20"|| fdss=="qixiang"|| fdss=="tianqi") ftss =cfts5 + "zgqx" + mnf1; //气象;
+else if(fdss=="21"|| fdss=="dfys"|| fdss=="dongfang") ftss =cfts5 + "dsjpdhd" + mnf3;//东方影视
+else if(fdss=="22"|| fdss=="sxws1"||fdss=="shanxi1") ftss =cfts5 + "shanxiws" + mnf1;//山西卫视;
+else if(fdss=="23"|| fdss=="scws"||fdss=="sicuan") ftss =cfts5 + "scws" + mnf1;     //四川卫视;
+else if(fdss=="24"|| fdss=="dfws"||fdss=="dongfang") ftss =cfts5 + "hddfws" + mnf3; //东方卫视
+else if(fdss=="25"|| fdss=="hbws"|| fdss=="hubei") ftss =cfts5 + "hbwshd" + mnf3;   //湖北卫视
+else if(fdss=="26"|| fdss=="jsws"|| fdss=="jiangsu") ftss =cfts5 + "jswshd" + mnf3; //江苏卫视
+else if(fdss=="27"|| fdss=="tjws"||fdss=="tianjin") ftss =cfts5 + "tjwshd" + mnf3;  //天津卫视
+else if(fdss=="28"|| fdss=="gzws"||fdss=="guizou") ftss =cfts5 + "gzws" + mnf1;     //贵州卫视
+else if(fdss=="29"|| fdss=="jlws"||fdss=="jilin") ftss =cfts5 + "btws" + mnf1;      //吉林卫视
+else if(fdss=="30"|| fdss=="sdws"||fdss=="shandong") ftss =cfts5 + "sdwshd" + mnf3; //山东卫视
+else if(fdss=="31"|| fdss=="hnws"||fdss=="hunan") ftss =cfts5 + "hnwshd" + mnf3;    //湖南卫视
+else if(fdss=="32"|| fdss=="btes"||fdss=="bintuan") ftss =cfts5 + "jlws" + mnf1;    //兵团卫视
+else if(fdss=="33"|| fdss=="lnws"||fdss=="liaoning") ftss =cfts5 + "lnwshd" + mnf3; //辽宁卫视
+else if(fdss=="34"|| fdss=="hljws"||fdss=="heilongjiang") ftss =cfts5 + "hljwshd" + mnf3; //黑龙江卫视
+else if(fdss=="35"|| fdss=="qjs" ||fdss=="quanjishi") ftss =cfts5 + "qjshd" + mnf3;//全纪实
+else if(fdss=="36"|| fdss=="ahws"||fdss=="anhui") ftss =cfts5 + "ahwshd" + mnf3;    //安徽卫视
+else if(fdss=="37"|| fdss=="szws"||fdss=="senzen") ftss =cfts5 + "szwshd" + mnf3;//深圳卫视
+else if(fdss=="38"|| fdss=="dnws"||fdss=="dongnan") ftss =cfts5 + "dnwshd" + mnf3;//东南卫视
+else if(fdss=="39"|| fdss=="ynws"||fdss=="yunnan") ftss =cfts5 + "ynws" + mnf1;//云南卫视
+else if(fdss=="40"|| fdss=="qhws"||fdss=="qinghai") ftss =cfts5 + "qhws" + mnf1;//青海卫视
+else if(fdss=="41"|| fdss=="hbws1"||fdss=="hebei1") ftss =cfts5 + "hbws" + mnf1;//河北卫视
+else if(fdss=="42"|| fdss=="hnws" ||fdss=="henan" ) ftss =cfts5 + "hnws" + mnf1;//河南卫视
+else if(fdss=="43"|| fdss=="sxws" ||fdss=="sanxi2") ftss =cfts5 + "sxws" + mnf1;//陕西卫视
 
 else if(fdss=="44"|| fdss=="fzzh" ||fdss=="fuzou1") ftss ="http://live.zohi.tv/video/s10001-FZTV-1/index.m3u8";//福州综合
 else if(fdss=="45"|| fdss=="fzys" ||fdss=="fuzou2") ftss ="http://live.zohi.tv/video/s10001-yspd-2/index.m3u8";//福州影视
