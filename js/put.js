@@ -379,7 +379,7 @@ var ssmv = '';
 if(slss().indexOf("dy") >0||slss().indexOf("dsj") >0||slss().indexOf("mv") >0) ssmv="mvlist.php";
 else if(slss().indexOf("tv")>0||slss().indexOf("zb")>0||slss().indexOf("av")>0|slss().indexOf("zg")>0||slss().indexOf("hb")>0) ssmv="tvlist.php";
 else if(slss().indexOf("so")>0||slss().indexOf("yu") >0||slss().indexOf("yun") >0) ssmv="solist.php";
-else if(slss().indexOf("zx") >0||slss().indexOf("xw") >0) ssmv="zxlist.php";else if(slss()==1) ssmv="wlist.htm";else if(slss()==2) ssmv="clist.htm";else if(slss()==3) ssmv="dlist.htm";else if(slss()==4) ssmv="flist.htm";else ssmv="plist.htm";
+else if(slss().indexOf("zx") >0||slss().indexOf("xw") >0) ssmv="zxlist.php";else if(slss()==1) ssmv="wlist.htm";else if(slss()==2) ssmv="clist.htm";else if(slss()==3) ssmv="dlist.htm";else if(slss()==4) ssmv="flist.htm";else if(slss()==6) ssmv="zlist.htm";else if(slss()==7) ssmv="clist.html";else if(slss()==8) ssmv="clisd.htm";else ssmv="plist.htm";
 return ssmv;
 }
 function listz(){
@@ -387,7 +387,7 @@ var ssmv = '';
 if(slss().indexOf("dy") >0||slss().indexOf("dsj") >0||slss().indexOf("mv") >0) ssmv="mvlist.php";
 else if(slss().indexOf("tv")>0||slss().indexOf("zb")>0||slss().indexOf("av")>0|slss().indexOf("zg")>0||slss().indexOf("hb")>0) ssmv="tvlist.php";
 else if(slss().indexOf("so")>0||slss().indexOf("yu") >0||slss().indexOf("yun") >0) ssmv="solist.php";
-else if(slss().indexOf("zx") >0||slss().indexOf("xw") >0) ssmv="zxlist.php";else if(slss()==1) ssmv="wlist.htm";else if(slss()==2) ssmv="clist.htm";else if(slss()==3) ssmv="dlist.htm";else if(slss()==4) ssmv="flist.htm";else ssmv="zxlist.php";
+else if(slss().indexOf("zx") >0||slss().indexOf("xw") >0) ssmv="zxlist.php";else if(slss()==1) ssmv="wlist.htm";else if(slss()==2) ssmv="clist.htm";else if(slss()==3) ssmv="dlist.htm";else if(slss()==4) ssmv="flist.htm";else if(slss()==6) ssmv="zlist.htm";else if(slss()==7) ssmv="clist.html";else if(slss()==8) ssmv="clisd.htm";else ssmv="zxlist.php";
 return ssmv;
 }
 function fmss(){
