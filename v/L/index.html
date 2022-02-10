@@ -12,7 +12,7 @@ function flss(){
 var flss = getId('url')?getId('url'):getId('f')?getId('f'):"http://live.xinhuashixun.com/live/chn01/desc.m3u8";
 return flss;
 }
-var src0 = 'https://www.33tn.cn/?url=' + flss();
+var src0 = 'https://parse.123mingren.com/?url=' + flss();
 </script>
 </head>
 <body style="overflow-y:hidden;height:100%;">
