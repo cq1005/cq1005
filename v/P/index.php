@@ -12,7 +12,7 @@ function flss(){
 var flss = getId('url')?getId('url'):getId('f')?getId('f'):"http://live.xinhuashixun.com/live/chn01/desc.m3u8";
 return flss;
 }
-var src0 = 'https://www.jiexila.com/?url=' + flss();
+var src0 = 'https://www.pangujiexi.com/jiexi/?url=' + flss();
 </script>
 </head>
 <body style="overflow-y:hidden;height:100%;">
