@@ -20,8 +20,9 @@ function getId( w ) {
 <div id="player"></div>
 <script type="text/javascript">
 if(flss<10) {
-        var swfn = 'https://s1.hdslb.com/bfs/static/blive/live-assets/player/flash/pageplayer-latest.swf?room_id=' + flss + '&cid=' + cid + '&state=LIVE&autoplay=1&auto=1';
-document.write('<embed  src="'+swfn+'" name="player" id="player" flashvars="autoplay=true&auto=true" height="'+height()+'" width="100%" SCROLLING="auto" frameborder="0" scroll="auto" type="application/x-shockwave-flash" quality="high" wmode="Opaque" allowfullscreen="true" disablePageFullscreen="true" allowscriptaccess="always"></embed>');
+        var swfn = 'https://www.bilibili.com/blackboard/live/live-activity-player.html?cid=' + cid + '&quality=0&autoplay=true';
+        var swfm = 'https://s1.hdslb.com/bfs/static/blive/live-assets/player/flash/pageplayer-latest.swf?room_id=' + flss + '&cid=' + cid + '&state=LIVE&autoplay=1&auto=1';
+document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" src="'+swfn+'" name="player" id="player" width="100%" height="'+height()+'" type="application/x-shockwave-flash" ><param name="movie" value="" /><param name="quality" value="high"/><param name="allowscriptaccess" value="always"/><param name="allowfullscreen" value="true"/><param name="wmode" value="Opaque"/><param name="bgcolor" value="#000000"/><param name="flashvars" value="&auto=true"/><iframe  src="'+swfn+'" name="player" id="player" flashvars="&auto=true" height="'+height()+'" width="100%" SCROLLING="auto" frameborder="0" scroll="auto" type="application/x-shockwave-flash" quality="high" wmode="Opaque" allowfullscreen="true" disablePageFullscreen="true" allowscriptaccess="always"></iframe></object>');
 } else {
         //var swfn = 'https://www.bilibili.com/html/player.html?aid=' + flss + '&cid=' + cid + '&page=1&autoplay=true';
         //var swfn = 'https://www.bilibili.com/blackboard/html5player.html?aid=' + flss + '&cid=' + cid + '&page=1&autoplay=true';
